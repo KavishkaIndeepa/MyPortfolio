@@ -18,3 +18,16 @@ header>div{
     margin: 10px;
 
 }
+
+footer{
+    position: relative;
+
+}
+
+.Contact{
+   position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

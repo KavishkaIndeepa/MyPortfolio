@@ -16,6 +16,11 @@
         background-color: white;
         border: 1px solid black;
         position: relative;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+
     }
 
 
@@ -63,6 +68,7 @@
     }
     body>main{
         position: relative;
+        margin-top: 100px;
     }
 
     body>main>nav>ul{
@@ -102,7 +108,9 @@
     }
 
     main>section>section>div:nth-child(1){
-
+        background: url("200w.gif");
+        background-size: cover;
+        background-position: center;
         left: 0;
     }
 
@@ -110,17 +118,41 @@
         left:0;
         right: 0;
         margin: auto;
+        background: url("200w.gif");
+        background-size: cover;
+        background-position: center;
 
     }
 
     main>section>section>div:nth-child(3){
         right: 0;
+        background: url("200w.gif");
+        background-size: cover;
+        background-position: center;
     }
 
+    /*#chatBox{*/
+    /*    width: 200px;*/
+    /*    height: 50px;*/
+    /*    right: 20px;*/
+    /*    bottom: 20px;*/
+    /*    background: darkblue;*/
+    /*    text-align: center;*/
+    /*    color: white;*/
+    /*    position: fixed;*/
+
+    /*}*/
+
+    /*#chatBox>p {*/
+    /*    padding-top: 10px;*/
+    /*    font-size: 20px;*/
+    /*}*/
+
 </style>
+
 <body>
 <header>
-    <img src="ijse.jpeg" alt="LOGO">
+    <img src="ijse.jpeg" alt="LOGO"/>
     <nav>
         <ul>
             <li><b><i class="fa-solid fa-house fa-beat" style="color: #095cec;"></i><a href="#home"style="font-size: 18px">Home</a></b>&nbsp;</li>
@@ -143,9 +175,9 @@
     <section>
         <section>
 
-            <div><img src="200w.gif"height="300" width="395"/></div>
-            <div><img src="200w.gif"height="300" width="395"/></div>
-            <div><img src="200w.gif"height="300" width="395"/></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium alias autem debitis
             deserunt doloribus ducimus earum eius eos et, facere impedit iure nam possimus praesentium rerum sit ut
@@ -220,10 +252,17 @@
         <p>Adipisci asperiores assumenda beatae consectetur deleniti dignissimos ex harum illum ipsam iste itaque
             iusto magnam maiores, mollitia nisi nostrum, officia placeat praesentium quas quos similique sit soluta
             tenetur! Aut, voluptate?</p>
+
+<!--        <div id="chatBox">-->
+<!--            <p>chatBox</p>-->
+<!--        </div>-->
     </section>
+
 </main>
+
 <footer>
     <p>Developed by Kavishka</p>
 </footer>
+
 </body>
 </html>

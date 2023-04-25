@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/css/case03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/caseFour.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +47,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,7 +82,8 @@
       <workItem from="1681918667225" duration="94000" />
       <workItem from="1681960967460" duration="21851000" />
       <workItem from="1682011062416" duration="5197000" />
-      <workItem from="1682350872950" duration="4621000" />
+      <workItem from="1682350872950" duration="6132000" />
+      <workItem from="1682430425699" duration="2175000" />
     </task>
     <servers />
   </component>

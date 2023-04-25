@@ -30,13 +30,13 @@
     <header>
         <h1>MyPortfolio</h1>
         <div class="topnav">
-            <b><i class="fa-solid fa-house" style="color: #1a6eff;"></i><a class="active" href="#home"style="font-size: 18px">Home</a></b>&nbsp;
-            <b><i class="fa-solid fa-address-book" style="color: #1a6eff;"></i><a href="#About" style="font-size: 18px">About Me</a></b>&nbsp;
-            <b><i class="fa-solid fa-user-graduate" style="color: #1a6eff;"></i><a href="#Education" style="font-size: 18px">Education</a></b>&nbsp;
-            <b><i class="fa-solid fa-layer-group" style="color:  #1a6eff;"></i><a href="#Skills" style="font-size: 18px">Skills</a></b>&nbsp;
-            <b><i class="fa-solid fa-sheet-plastic" style="color: #1a6eff;"></i><a href="#Projects" style="font-size: 18px">Projects</a></b>&nbsp;
-            <b><i class="fa-solid fa-image" style="color: #1a6eff;"></i><a href="#Gallery" style="font-size: 18px">Gallery</a></b>&nbsp;
-            <b><i class="fa-solid fa-phone" style="color:#1a6eff;"></i><a href="#Contact" style="font-size: 18px">Contact</a></b>&nbsp;
+            <b><i class="fa-solid fa-house" style="color: #ffffff;"></i><a class="active" href="#home"style="font-size: 18px">Home</a></b>&nbsp;
+            <b><i class="fa-solid fa-person" style="color: #ffffff;"></i><a href="#About" style="font-size: 18px">About Me</a></b>&nbsp;
+            <b><i class="fa-solid fa-school" style="color: #ffffff;"></i><a href="#Education" style="font-size: 18px">Education</a></b>&nbsp;
+            <b><i class="fa-solid fa-file" style="color: #ffffff;"></i><a href="#Skills" style="font-size: 18px">Skills</a></b>&nbsp;
+            <b><i class="fa-solid fa-diagram-project" style="color: #ffffff;"></i><a href="#Projects" style="font-size: 18px">Projects</a></b>&nbsp;
+            <b><i class="fa-solid fa-image" style="color: #ffffff;"></i><a href="#Gallery" style="font-size: 18px">Gallery</a></b>&nbsp;
+            <b><i class="fa-solid fa-address-book" style="color: #ffffff;"></i><a href="#Contact" style="font-size: 18px">Contact</a></b>&nbsp;
         </div>
 
     </header>
@@ -44,13 +44,14 @@
     <main>
         <!-- 1 -->
         <section>
-            <img src="assets/image/main.jpg" alt="main">
+
+            <div><img src="assets/image/main.jpg" alt="main"></div>
             <aside>
               <div><img src="assets/image/kavishka.png" alt="Wallpaper"></div>
             </aside>
 
 
-            <article>
+            <article class="Article">
                 <h3>Hey</h3>
                 <h3>I'M Kavishka Indeepa</h3>
                 <h3>Software Engnieer in Sri Lanka</h3>
@@ -187,6 +188,7 @@
         <!-- 5 -->
         <section>
             <!-- 5.1 -->
+            <h2><dfn id="Project">Project</dfn></h2>
             <section>
                 <h2><dfn id="Projects">My Projects</dfn></h2>
                 <hr>
@@ -222,6 +224,7 @@
 
         <!-- 6 -->
         <section>
+            <hr>
             <h2><dfn id="Gallery">Gallery</dfn></h2>
 
             <img width="200" height="360" src="assets/image/Galary2.jpeg" alt="Kavi1">
@@ -235,6 +238,7 @@
 
     <!-- contact details -->
     <footer>
+        <hr>
         <section>
             <h2><dfn id="Contact">Contact me</dfn></h2>
             <h3>Contact Info</h3>
@@ -271,6 +275,7 @@
         </section>
 
         <section>
+
             <form class="Contact">
                 <label for="txtName">First Name</label>
                 <input name="name" type="text" id="txtName" placeholder="First Name"><br><br>
@@ -285,7 +290,7 @@
                 <textarea name="name" id="txtMassage" cols="30" rows="4" placeholder="Massage"></textarea><br><br>
 
             </form>
-            <button>Send <img width="20" height="10" src="assets/image/send.png" alt="Send"> </button>
+            <button class="sendButton">Send <img width="20" height="10" src="assets/image/send.png" alt="Send"> </button>
         </section>
 
         <br>

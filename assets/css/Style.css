@@ -1,7 +1,7 @@
 header{
     box-shadow:4px 1px 4px 0px black;
-    background-color: white;
-    border: 1px solid black;
+    background-color: black;
+    border: 1px solid white;
     position: relative;
     position: fixed;
     width: 100%;
@@ -10,13 +10,17 @@ header{
 
 }
 
-header>div{
+body>header>h1{
+    color: white;
+}
+
+.topnav{
     position: absolute;
     right: 20px;
     top: 16px;
     font-family: Rockwell;
-    margin: 10px;
-
+    margin: 20px;
+    color: white;
 }
 
 footer{
@@ -27,7 +31,14 @@ footer{
 .Contact{
    position: absolute;
     right: 0;
-    top: 0;
+    top: 100px;
     bottom: 0;
     margin: auto;
+}
+
+.sendButton{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
 }

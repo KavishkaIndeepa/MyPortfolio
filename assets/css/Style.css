@@ -1,3 +1,6 @@
+/**{*/
+/*    margin: 0;*/
+/*}*/
 header{
     box-shadow:4px 1px 4px 0px black;
     background-color: black;
@@ -21,6 +24,34 @@ body>header>h1{
     font-family: Rockwell;
     margin: 20px;
     color: white;
+}
+
+
+.MainImage{
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.SubImage{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: 50px;
+}
+
+main>section>{
+
+    top: 85px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.Article{
+    position: absolute;
+    z-index: 2;
+    bottom: 150px;
+    right: 250px;
 }
 
 footer{

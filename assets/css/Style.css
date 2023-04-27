@@ -27,10 +27,18 @@ body>header>h1{
 }
 
 /*------------------------------------------------------------------------------------------------*/
+
+.homePage{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
 .MainImage{
     z-index: 2;
     width: 100vw;
     height: 100vh;
+    position: absolute;
 }
 
 .SubImage{
@@ -53,6 +61,14 @@ main>section>{
     bottom: 150px;
     right: 250px;
 }
+
+.navButton{
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    right: 341px;
+}
+
 
 /*------------------------------------------------------------------------------------------------------------*/
 

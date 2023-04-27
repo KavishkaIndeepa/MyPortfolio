@@ -26,7 +26,7 @@ body>header>h1{
     color: white;
 }
 
-
+/*------------------------------------------------------------------------------------------------*/
 .MainImage{
     z-index: 2;
     width: 100vw;
@@ -54,6 +54,19 @@ main>section>{
     right: 250px;
 }
 
+/*------------------------------------------------------------------------------------------------------------*/
+
+.education>.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
 footer{
     position: relative;
 
@@ -73,3 +86,4 @@ footer{
     bottom: 50px;
 
 }
+

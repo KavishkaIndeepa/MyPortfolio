@@ -50,15 +50,12 @@ body > main{
 
 
 main>section>section>div#MainImage{
-    /*z-index: 2;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    /*position: absolute;*/
-    /*align-self: center*/
+
     background-image: url("../image/main.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
+    filter: opacity(0.5) drop-shadow(0 0);
 
   }
 
@@ -102,24 +99,30 @@ main>section>{
 }
 
 
-div.Article>h3:nth-child(1){
-    color: white;
-    font-family: inter, serif;
-    font-size: 30px;
-}
-
-div.Article>h3:nth-child(2){
+div.Article>div:nth-child(1){
     position: absolute;
-    right: 0;
     color: white;
-    font-family: inter, serif;
-    font-size: 30px;
+    font-family: Koulen, Rockwell;
+    font-size: 50px;
+    bottom: 300px;
+    right: 500px;
+
 }
 
-div.Article>h3:nth-child(3){
+div.Article>div:nth-child(2){
+    position: absolute;
+    right: 70px;
+    color: white;
+    font-family: Koulen, Rockwell;
+    font-size: 50px;
+    bottom: 170px;
+}
+
+div.Article>div:nth-child(3){
     position: absolute;
     bottom: 0;
-    font-size: 25px;
+    font-size: 36px;
+    font-family: Koulen, Rockwell;
 }
 
 

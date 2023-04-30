@@ -226,12 +226,14 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 footer{
     position: relative;
     top: 85px;
+    height: 100vh;
+    border: 1px solid black;
 }
 
 .Contact{
    position: absolute;
     right: 0;
-    top: 100px;
+    top: 50px;
     bottom: 0;
     margin: auto;
 }
@@ -241,5 +243,13 @@ footer{
     right: 50px;
     bottom: 50px;
 
+}
+
+.Contact>label{
+    margin: 10px;
+}
+
+.Contact>input{
+    margin: 10px;
 }
 

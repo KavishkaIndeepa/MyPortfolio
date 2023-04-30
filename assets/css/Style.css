@@ -204,7 +204,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 .DownloadButton{
     position: absolute;
     bottom: 40px;
-    right: 10px;
+    right: 30px;
     background-color: #095cec;
     color: white;
 }

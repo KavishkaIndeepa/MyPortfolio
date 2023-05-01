@@ -29,7 +29,10 @@ body>header>h1{
 
 .topnav>b{
     margin: 5px;
+    transform: scale(1.08);
+
 }
+
 
 /*--------------------------------- Home Page ----------------------------------------------------------*/
 
@@ -226,6 +229,71 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 }
 
 
+
+
+/*------------------------------------------ Skills -----------------------------------------------------------------*/
+
+.Skills{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border: 1px solid black;
+    /*display: flex;*/
+
+}
+
+.SkillHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-family: Koulen, Rockwell;
+    font-size: 30px;
+    border-radius: 50px;
+
+
+}
+
+.certificate{
+    top: 20px;
+    flex-shrink: 1;
+}
+
+.Skills>section:nth-child(2)>h3{
+    font-family: Koulen, Rockwell;
+    font-size: 30px;
+
+}
+.languages{
+    position: absolute;
+    width: 100%;
+}
+.languages>img{
+    transform: scale(1.08);
+    margin: 20px;
+}
+
+.tools{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+}
+
+.tools>img{
+    transform: scale(1.08);
+    margin: 20px;
+}
+
+.Skills>section:nth-child(3)>h3{
+    font-family: Koulen, Rockwell;
+    font-size: 30px;
+
+}
+
+
 /*------------------------------------------------------------------------------------------------------------*/
 footer{
     position: relative;
@@ -257,3 +325,7 @@ footer{
     margin: 10px;
 }
 
+/*------------------------------------*/
+/*body {*/
+/*    overflow-x: hidden;*/
+/*}*/

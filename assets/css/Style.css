@@ -258,7 +258,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     width: 100vw;
     height: 100vh;
     position: relative;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .educationHead{
@@ -333,8 +333,9 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     width: 100vw;
     height: 100vh;
     position: relative;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*display: flex;*/
+
 
 }
 
@@ -414,9 +415,10 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 .Gallery{
     position: relative;
     height: 100vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
     align-items: center;
+
 }
 
 #galleryHead{
@@ -432,15 +434,34 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     border-radius: 50px;
 }
 
+.Gallery>img{
+    border: 1px solid black;
+    box-shadow:4px 1px 4px 0px blue;
+    /*align-self: center;*/
+
+}
+
 
 /*------------------------------------------- Footer ---------------------------------------------------------------*/
 footer{
     position: relative;
     top: 85px;
     height: 100vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
+#Contact{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-family: Koulen, Rockwell;
+    font-size: 30px;
+    border-radius: 50px;
+}
 
 #chatBox{
     width: 60vw;
@@ -506,6 +527,36 @@ button:hover {
     margin: 10px;
 }
 
+
+.contactInfo{
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    font-family: Koulen, Rockwell;
+    font-size: 20px;
+    left: 3vw;
+}
+
+#ContactSubHead{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    font-family: Koulen, Rockwell;
+    font-size: 20px;
+}
+
+#ContactSubHead>h3>span{
+    color:blue;
+    padding:0 .5rem;
+}
+
+
+
+#copyRight{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
 /*------------------------------------*/
 /*body {*/
 /*    overflow-x: hidden;*/

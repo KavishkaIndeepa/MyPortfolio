@@ -1,6 +1,35 @@
-/**{*/
-/*    margin: 0;*/
-/*}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*font-family: 'Ubuntu', sans-serif;*/
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+/*--------------------------------------------- header -------------------------------------------*/
 header{
     box-shadow:4px 1px 4px 0px black;
     background-color: black;
@@ -25,6 +54,12 @@ body>header>h1{
     border: 1px solid black;
     margin: 20px;
     color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .topnav>b{
@@ -69,8 +104,8 @@ main>section>section>div#MainImage{
 .SubImage{
     position: absolute;
     left: 0;
-
     top: 50px;
+    height: 90%;
 
 
 }
@@ -152,7 +187,8 @@ main>section.homePage>div.navButton>img{
     width: 100vw;
     height: 100vh;
     position: relative;
-    border: 1px solid black;
+    /*margin-top: 126px;*/
+    /*border: 1px solid black;*/
 }
 
 .AboutHead{
@@ -200,7 +236,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 .Paragraph{
     position: absolute;
-    bottom: 90px;
+    bottom: 120px;
     left: 45px;
     font-family: Koulen, Rockwell;
     font-size: 20px;
@@ -218,7 +254,25 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 
 /*------------------------------------------ Education ------------------------------------------------------------*/
+.education{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border: 1px solid black;
+}
 
+.educationHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-family: Koulen, Rockwell;
+    font-size: 30px;
+    border-radius: 50px;
+}
 .education>.box-container{
     display: flex;
     align-items: center;
@@ -226,7 +280,49 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     flex-wrap: wrap;
     padding:1rem 0;
     padding-left: 3rem;
+    padding-right: 3rem;
 }
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid blue;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:blue;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1rem;
+    font-family: Koulen, Rockwell;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: white;
+
+}
+
 
 
 
@@ -271,6 +367,12 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     position: absolute;
     width: 100%;
 }
+
+#languageHeader{
+    position: absolute;
+    left: 50%;
+}
+
 .languages>img{
     transform: scale(1.08);
     margin: 20px;
@@ -280,6 +382,12 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     position: absolute;
     bottom: 35px;
     width: 100%;
+}
+
+#toolHeader{
+    position: absolute;
+    left: 50%;
+    bottom: 130px;
 }
 
 .tools>img{
@@ -293,8 +401,39 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 }
 
+/*-------------------------------------------- Projects ------------------------------------------------------------*/
 
-/*------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------- Gallery -------------------------------------------------------------*/
+
+.Gallery{
+    position: relative;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#galleryHead{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-family: Koulen, Rockwell;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+
+/*------------------------------------------- Footer ---------------------------------------------------------------*/
 footer{
     position: relative;
     top: 85px;
@@ -302,21 +441,63 @@ footer{
     border: 1px solid black;
 }
 
-.Contact{
-   position: absolute;
-    right: 0;
-    top: 50px;
-    bottom: 0;
-    margin: auto;
-}
 
-.sendButton{
+#chatBox{
+    width: 60vw;
+    top: 20vh;
+    right: 12vw;
     position: absolute;
-    right: 50px;
-    bottom: 50px;
-
 }
 
+
+form.Contact {
+    padding: 20px;
+    width: 50vw;
+    margin: 0 auto;
+    color: black;
+    position: relative;
+}
+
+input#name{
+    width: 40%;
+    position: absolute;
+}
+input#email{
+    width: 50%;
+    left: 50%;
+    position: relative;
+}
+/*input,*/
+/*textarea {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    padding: 12px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    margin-bottom: 10px;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*}*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(201, 211, 214);
+}
+button {
+    background-color: #44444C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
 .Contact>label{
     margin: 10px;
 }

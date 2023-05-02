@@ -131,11 +131,11 @@
 
         <!-- 3 -->
         <section class="education">
-            <h2><dfn id="Education">Education</dfn> </h2>
+            <h2 class="educationHead"><dfn id="Education">Education</dfn> </h2>
 
             <div class="box-container">
 
-                <div>
+                <div class="box">
                     <i class="fas fa-graduation-cap"></i>
                     <span>2017</span>
                     <h3>Ordinary Level</h3>
@@ -143,7 +143,7 @@
                         G/Sri/ Devananda Collage</p>
                 </div>
 
-                <div>
+                <div class="box">
                     <i class="fas fa-graduation-cap"></i>
                     <span>2020</span>
                     <h3>Advance Level</h3>
@@ -151,7 +151,7 @@
                         G/Sri/ Devananda Collage</p>
                 </div>
 
-                <div>
+                <div class="box">
                     <i class="fas fa-graduation-cap"></i>
                     <span>2022</span>
                     <h3>Student of IJSE</h3>
@@ -159,7 +159,7 @@
                         GDSE 60 Batch</p>
                 </div>
 
-                <div>
+                <div class="box">
                     <i class="fas fa-graduation-cap"></i>
                     <span>2024</span>
                     <h3>Degree Level</h3>
@@ -182,8 +182,8 @@
 
             <!-- 4.2 -->
             <section class="languages">
-                <h3>Languages</h3>
-                <hr>
+                <h3 id="languageHeader">Languages</h3>
+
                 <img  width="70"  src="assets/image/java.jpeg" alt="java">
                 <img  width="70" src="assets/image/mysql.jpeg" alt="mySql">
                 <img  width="70" src="assets/image/html.jpeg" alt="html">
@@ -192,8 +192,8 @@
 
             <!-- 4.3 -->
             <section class="tools">
-                <h3>Tools</h3>
-                <hr>
+                <h3 id="toolHeader">Tools</h3>
+
                 <img width="70" src="assets/image/idia.jpeg" alt="idia">
                 <img width="70" height="65" src="assets/image/figmas.jpeg" alt="figma">
                 <img width="70" height="68" src="assets/image/netbeans.jpeg" alt="netbeans">
@@ -206,7 +206,7 @@
 
 
         <!-- 5 -->
-        <section>
+        <section class="projects">
             <!-- 5.1 -->
             <h2><dfn id="Project">Project</dfn></h2>
             <section>
@@ -243,9 +243,9 @@
 
 
         <!-- 6 -->
-        <section>
+        <section class="Gallery">
             <hr>
-            <h2><dfn id="Gallery">Gallery</dfn></h2>
+            <h2 id="galleryHead"><dfn id="Gallery">Gallery</dfn></h2>
 
             <img width="200" height="360" src="assets/image/Galary2.jpeg" alt="Kavi1">
             <img width="200" height="340" src="assets/image/Galary4.jpeg" alt="kavi2">
@@ -260,14 +260,18 @@
     <footer>
         <section>
             <h2><dfn id="Contact">Contact me</dfn></h2>
+            <div id="ContactDetails">
             <h3>Contact Info</h3>
+
             <img height="30" width="20" src="assets/image/person.jpg" alt="Person"><label><b>Kavishka Indeepa</b></label>
             <br><br>
             <img height="30" width="20" src="assets/image/email.jpg" alt="email"><label><b>indeepakavishka@gmail.com</b></label><br><br>
             <img height="30" width="20" src="assets/image/call.jpg" alt="Call"><label><b>0779796003</b></label><br><br>
             <img height="30" width="20" src="assets/image/location.jpg" alt="Location"><label><b>Godagama , Telwaththa</b></label><br><br>
 
-            <div>
+            </div>
+
+            <div id="NavButtons">
                 <!-- 1-->
                 <img usemap="#GITHUB" width="50" src="assets/image/github.jpeg" alt="GitHub">
                 <map name="GITHUB">
@@ -293,10 +297,10 @@
             </div>
         </section>
 
-        <section>
+        <section id="chatBox">
 
             <form class="Contact">
-                <label for="txtName">First Name</label>
+                <label for="txtName">Name</label>
                 <input name="name" type="text" id="txtName" placeholder="First Name"><br><br>
 
                 <label for="txtEMail">E-Mail</label>
@@ -308,8 +312,10 @@
                 <lable for="txtMassage">Massage</lable>
                 <textarea name="name" id="txtMassage" cols="30" rows="4" placeholder="Massage"></textarea><br><br>
 
+                    <button >send</button>
+
+
             </form>
-            <button class="sendButton">Send <img width="20" height="10" src="assets/image/send.png" alt="Send"> </button>
         </section>
 
         <br>

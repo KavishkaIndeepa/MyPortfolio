@@ -56,6 +56,11 @@ body>header>h1{
     color: white;
 }
 
+.topnav>b:hover{
+    transform: scale(1.08);
+
+}
+
 a{
     color: white;
     text-decoration: none;

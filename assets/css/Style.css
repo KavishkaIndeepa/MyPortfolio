@@ -73,6 +73,10 @@ a{
 
 }
 
+.topnav>a:hover{
+    transform: scale(1.08);
+}
+
 
 /*--------------------------------- Home Page ----------------------------------------------------------*/
 
@@ -122,14 +126,6 @@ main>section>{
     position: relative;
 }
 
-/*.Article{*/
-/*    position: absolute;*/
-/*    z-index: 2;*/
-/*    bottom: 150px;*/
-/*    right: 250px;*/
-/*}*/
-
-
 .Article{
     position: absolute;
     width: 400px;
@@ -173,6 +169,9 @@ div.Article>div:nth-child(3){
     bottom: 40px;
     right: 341px;
     border-radius: 100%;
+}
+.navButton>img:hover{
+    transform: scale(1.08);
 }
 
 main>section.homePage>div.navButton>img{
@@ -336,10 +335,9 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 .Skills{
     width: 100vw;
-    height: 100vh;
+    height: 170vh;
     position: relative;
     /*border: 1px solid black;*/
-    /*display: flex;*/
 
 
 }
@@ -360,8 +358,24 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 }
 
 .certificate{
-    top: 20px;
+    /*border: 1px solid black;*/
+    top: 20vh;
     flex-shrink: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.certificate>div>img{
+    height: 200px;
+    width: 300px;
+
+}
+
+.certificate>div>img:hover{
+    transform: scale(1.08);
+
 }
 
 .Skills>section:nth-child(2)>h3{
@@ -370,13 +384,20 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 }
 .languages{
+    /*border: 1px solid black;*/
     position: absolute;
     width: 100%;
+    top: 70vh;
+}
+
+.languages>img:hover{
+    transform: scale(1.08);
 }
 
 #languageHeader{
     position: absolute;
     left: 50%;
+    top: 65vh;
 }
 
 .languages>img{
@@ -385,15 +406,16 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 }
 
 .tools{
+    /*border: 1px solid black;*/
     position: absolute;
-    bottom: 35px;
+    top: 120vh;
     width: 100%;
 }
 
 #toolHeader{
     position: absolute;
     left: 50%;
-    bottom: 130px;
+    bottom: 18vh;
 }
 
 .tools>img{
@@ -447,8 +469,8 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 }
 
 
-/*------------------------------------------- Footer ---------------------------------------------------------------*/
-footer{
+/*------------------------------------------- Contact ---------------------------------------------------------------*/
+.contact{
     position: relative;
     top: 85px;
     height: 100vh;
@@ -469,7 +491,7 @@ footer{
 }
 
 #chatBox{
-    width: 60vw;
+    width: 40vw;
     top: 20vh;
     right: 12vw;
     position: absolute;
@@ -478,8 +500,8 @@ footer{
 
 form.Contact {
     padding: 20px;
-    width: 50vw;
-    margin: 0 auto;
+    width: 30vw;
+    /*margin: 0 auto;*/
     color: black;
     position: relative;
 }
@@ -556,11 +578,21 @@ button:hover {
 }
 
 
-
+/*------------------------------------------------------------ Footer ----------------------------------------------*/
 #copyRight{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    margin-top: 13.3vh;
+    height: 5vh;
+    background: rgba(0, 0, 0, 0.82);
+    border-top: 3px solid blue;
+    text-align: center;
+
+}
+
+#copyRight>small{
+    color: white;
+    font-family: 'poppins', sans-serif ;
+
+
 }
 /*------------------------------------*/
 /*body {*/

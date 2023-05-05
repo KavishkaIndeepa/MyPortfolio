@@ -369,6 +369,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 .certificate>div>img{
     height: 200px;
     width: 300px;
+    box-shadow:4px 1px 4px 0px #2b2a2a;
 
 }
 
@@ -389,6 +390,12 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     top: 70vh;
 }
 
+
+.languages>img{
+    margin: 20px;
+    box-shadow:4px 1px 4px 0px #2b2a2a;
+}
+
 .languages>img:hover{
     transform: scale(1.08);
 }
@@ -401,10 +408,6 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     font-size: 30px;
 }
 
-.languages>img{
-    transform: scale(1.08);
-    margin: 20px;
-}
 
 .tools{
     /*border: 1px solid black;*/
@@ -422,8 +425,12 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 }
 
 .tools>img{
-    transform: scale(1.08);
+    box-shadow:4px 1px 4px 0px #2b2a2a;
     margin: 20px;
+
+}
+.tools>img:hover{
+    transform: scale(1.08);
 }
 
 .Skills>section:nth-child(3)>h3{
@@ -454,39 +461,65 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     border-radius: 50px;
 }
 
+.projectSection{
+    position: relative;
+    height: 75vh;
+    top: 5vh;
+    border: 1px solid black;
+    display: flex;
+}
+
 #projectTitle{
     position: absolute;
-    top: 10vh;
+    top: 5vh;
 }
 
 .projectImages{
     position: absolute;
-    top: 20vh;
+    top: 12vh;
+
+}
+
+.projectImages>img{
+    box-shadow:4px 1px 4px 0px #2b2a2a;
 }
 
 #discription{
 position: absolute;
-    top: 70vh;
+    top: 60vh;
 }
 
 #goGitHub{
     position: absolute;
-    top: 75vh;
+    top: 65vh;
 }
 
+
+.assignmentSection{
+    position: relative;
+    height: 75vh;
+    top: 5vh;
+    border: 1px solid black;
+
+}
 .assignmentTitle{
     position: absolute;
-    top: 90vh;
+    top: 5vh;
 }
 
 .assignmentImages{
     position: absolute;
-    top: 100vh;
+    top: 12vh;
+}
+
+.assignmentImages>img{
+    box-shadow:4px 1px 4px 0px #2b2a2a;
 }
 
 .assignmentButton{
     position: absolute;
     bottom: 5vh;
+    left: 50%;
 }
 
 .projectImages>img:hover{
@@ -528,7 +561,7 @@ position: absolute;
 
 .Gallery>div>img{
     border: 1px solid black;
-    box-shadow:4px 1px 4px 0px blue;
+    box-shadow:4px 1px 4px 0px #2b2a2a;
     /*align-self: center;*/
 
 }

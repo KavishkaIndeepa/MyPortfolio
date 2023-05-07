@@ -183,6 +183,31 @@ main>section.homePage>div.navButton>img{
 
 }
 
+.tranc {
+    overflow-x: hidden;
+}
+
+.text {
+    font-weight: bold;
+    animation-name: rightToLeft;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+
+    /* animation: rightToLeft 4.5s linear infinite; */
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-160px);
+    }
+}
+
+
 
 /*------------------------------------------ About Me -------------------------------------------------------------*/
 
@@ -220,6 +245,7 @@ main>section.homePage>div.navButton>img{
     top: 65px;
     font-family: Koulen, Rockwell;
     font-size: 30px;
+    border-left: .2rem solid blue;
 }
 
 .Information>li{
@@ -242,7 +268,9 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     bottom: 120px;
     left: 45px;
     font-family: Koulen, Rockwell;
-    font-size: 20px;
+    font-size: 30px;
+    border-left: .2rem solid blue;
+
 }
 
 

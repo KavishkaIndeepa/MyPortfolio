@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_Three</title>
+</head>
+
+<style>
+
+
+
+  div {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    animation-name: caseThree;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: aqua;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+
+  }
+
+  @keyframes caseThree {
+
+    /* from {
+        background-color:red;
+        border: 10px solid black;
+    }
+    to {
+        background-color: blue;
+        border: 10px solid black;
+    } */
+    0% {
+      background-color: blue;
+      margin: 0px 0px 0px 0px;
+    }
+
+    25% {
+      background-color: yellow;
+      margin: 0px 0px 0px 1000px;
+      transform: rotate(90deg);
+    }
+
+    50% {
+      background-color: red;
+      margin: 490px 0px 0px 1000px;
+      transform: rotate(180deg);
+    }
+
+    75% {
+      background-color: deeppink;
+      margin: 490px 0px 0px 0px;
+      transform: rotate(270deg);
+    }
+
+    100% {
+      background-color: orange;
+      transform: rotate(360deg);
+    }
+  }
+
+</style>
+<body>
+<div></div>
+</body>
+</html>

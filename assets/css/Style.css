@@ -128,11 +128,11 @@ main>section>{
 
 .Article{
     position: absolute;
-    width: 400px;
+    width: 90vh;
     height: 250px;
     z-index: 1;
     bottom: 150px;
-    right: 250px;
+    right: 12vh;
 }
 
 
@@ -142,13 +142,13 @@ div.Article>div:nth-child(1){
     font-family: Koulen, Rockwell;
     font-size: 50px;
     bottom: 300px;
-    right: 500px;
+    right: 85vh;
 
 }
 
 div.Article>div:nth-child(2){
     position: absolute;
-    right: 70px;
+    right: 100px;
     color: white;
     font-family: Koulen, Rockwell;
     font-size: 50px;
@@ -160,6 +160,7 @@ div.Article>div:nth-child(3){
     bottom: 0;
     font-size: 36px;
     font-family: Koulen, Rockwell;
+    right: 70px;
 }
 
 
@@ -230,6 +231,7 @@ main>section.homePage>div.navButton>img{
     font-family: Koulen, Rockwell;
     font-size: 30px;
     border-radius: 50px;
+    text-align: center;
 
 }
 
@@ -254,7 +256,7 @@ main>section.homePage>div.navButton>img{
 
 body>main>section:nth-child(2)>div:nth-child(3){
     position: absolute;
-    top: 440px;
+    bottom: 30vh;
     left: 45px;
 
 }
@@ -265,10 +267,10 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 .Paragraph{
     position: absolute;
-    bottom: 120px;
+    bottom: 15vh;
     left: 45px;
     font-family: Koulen, Rockwell;
-    font-size: 30px;
+    font-size: 24px;
     border-left: .2rem solid blue;
 
 }
@@ -303,6 +305,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     font-family: Koulen, Rockwell;
     font-size: 30px;
     border-radius: 50px;
+    text-align: center;
 }
 .education>.box-container{
     display: flex;
@@ -380,6 +383,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     font-family: Koulen, Rockwell;
     font-size: 30px;
     border-radius: 50px;
+    text-align: center;
 
 
 }
@@ -473,7 +477,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     width: 100vw;
     height: 160vh;
     position: relative;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .projectHeader{
@@ -487,13 +491,14 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     font-family: Koulen, Rockwell;
     font-size: 30px;
     border-radius: 50px;
+    text-align: center;
 }
 
 .projectSection{
     position: relative;
     height: 75vh;
     top: 5vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
 }
 
@@ -527,7 +532,7 @@ position: absolute;
     position: relative;
     height: 75vh;
     top: 5vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 
 }
 .assignmentTitle{
@@ -585,6 +590,7 @@ position: absolute;
     font-family: Koulen, Rockwell;
     font-size: 30px;
     border-radius: 50px;
+    text-align: center;
 }
 
 .Gallery>div>img{
@@ -618,6 +624,7 @@ position: absolute;
     font-family: Koulen, Rockwell;
     font-size: 30px;
     border-radius: 50px;
+    text-align: center;
 }
 
 #chatBox{

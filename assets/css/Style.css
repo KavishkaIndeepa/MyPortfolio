@@ -255,6 +255,10 @@ main>section.homePage>div.navButton>img{
 
 .Information>li{
     margin: 20px;
+
+}
+.Information>li>span{
+    color:blue;
 }
 
 body>main>section:nth-child(2)>div:nth-child(3){
@@ -397,7 +401,8 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     flex-shrink: 1;
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+
 
 }
 
@@ -405,7 +410,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     height: 200px;
     width: 300px;
     box-shadow:4px 1px 4px 0px #2b2a2a;
-
+    border: 1px solid blue;
 }
 
 .certificate>div>img:hover{
@@ -504,7 +509,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     top: 5vh;
     /*border: 1px solid black;*/
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #projectTitle{
@@ -512,15 +517,20 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     top: 5vh;
     left: 50%;
 }
+#projectTitle>span{
+    color: blue;
+}
 
 .projectImages{
     position: absolute;
     top: 12vh;
 
+
 }
 
 .projectImages>img{
     box-shadow:4px 1px 4px 0px #2b2a2a;
+    border: 1px solid blue;
 
 }
 
@@ -541,13 +551,17 @@ position: absolute;
     position: relative;
     height: 75vh;
     top: 5vh;
-    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
 
 }
 .assignmentTitle{
     position: absolute;
     top: 5vh;
     left: 50%;
+}
+.assignmentTitle>span{
+    color: blue;
 }
 
 .assignmentImages{
@@ -557,6 +571,7 @@ position: absolute;
 
 .assignmentImages>img{
     box-shadow:4px 1px 4px 0px #2b2a2a;
+    border: 1px solid blue;
 }
 
 .assignmentButton{
@@ -584,8 +599,6 @@ position: absolute;
     position: relative;
     height: 100vh;
     /*border: 1px solid black;*/
-    display: flex;
-    align-items: center;
 
 }
 
@@ -603,14 +616,28 @@ position: absolute;
     text-align: center;
 }
 
-.Gallery>div>img{
+.Gallery>div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10vh;
+    height: 80vh;
+    /*border: 1px solid black;*/
+}
+
+.images{
+    position: absolute;
+}
+
+.images>img{
     border: 1px solid black;
     box-shadow:4px 1px 4px 0px #2b2a2a;
     /*align-self: center;*/
 
 }
 
-.Gallery>div>img:hover{
+.images>img:hover{
     transform: scale(1.08);
 }
 

@@ -117,6 +117,7 @@ main>section>section>div#MainImage{
     height: 90%;
 
 
+
 }
 
 main>section>{
@@ -238,7 +239,9 @@ main>section.homePage>div.navButton>img{
 .AboutPhoto{
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 2vh;
+    /*border: 1px solid black;*/
+    background: linear-gradient(to right, #f6f8f8, #36393e);;
 }
 
 .Information{
@@ -492,6 +495,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     font-size: 30px;
     border-radius: 50px;
     text-align: center;
+
 }
 
 .projectSection{
@@ -500,11 +504,13 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     top: 5vh;
     /*border: 1px solid black;*/
     display: flex;
+    align-items: center;
 }
 
 #projectTitle{
     position: absolute;
     top: 5vh;
+    left: 50%;
 }
 
 .projectImages{
@@ -515,16 +521,19 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 .projectImages>img{
     box-shadow:4px 1px 4px 0px #2b2a2a;
+
 }
 
 #discription{
 position: absolute;
     top: 60vh;
+    left: 50%;
 }
 
 #goGitHub{
     position: absolute;
     top: 65vh;
+    left: 50%;
 }
 
 
@@ -538,6 +547,7 @@ position: absolute;
 .assignmentTitle{
     position: absolute;
     top: 5vh;
+    left: 50%;
 }
 
 .assignmentImages{

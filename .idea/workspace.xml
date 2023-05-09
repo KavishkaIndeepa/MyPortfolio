@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assignment/Animations/caseSix/caseSix.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Animations/caseSix/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/190655694.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/190655694.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/brixkM.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/brixkM.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/lap.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/lap.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/wp9143560.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/wp9143560.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/caseFive.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/caseFive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFour/caseFour.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFour/caseFour.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseThree/caseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseThree/caseThree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +115,7 @@
       <workItem from="1683314508017" duration="2847000" />
       <workItem from="1683469883524" duration="3902000" />
       <workItem from="1683520474933" duration="8768000" />
-      <workItem from="1683615213361" duration="6240000" />
+      <workItem from="1683615213361" duration="9730000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

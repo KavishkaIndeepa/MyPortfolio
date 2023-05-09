@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_Six</title>
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<style>
+
+    body{
+        background-image: url("images/sky.jpg");
+        overflow: hidden;
+    }
+
+    /*city*/
+    .city{
+        display: flex;
+        position: absolute;
+        bottom: 13vw;
+        animation-name: city;
+        animation-duration: 5s;
+    }
+
+    .city>img{
+        height: 40vh;
+    }
+
+    @keyframes city {
+        from{
+            left: 0;
+        }
+
+        to{
+            left: -200%;
+        }
+    }
+
+
+    /*road*/
+    .road{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        animation-name: Road;
+        animation-duration: 5s;
+    }
+
+    .road>img{
+        height: 13vw;
+
+    }
+
+
+    @keyframes Road {
+        from{
+            left: 0;
+        }
+
+        to{
+            left: -200%;
+        }
+    }
+
+    /*car*/
+   .car{
+       position: absolute;
+       height: 30%;
+       width: 100%;
+       bottom: 0;
+   }
+
+   .car>img{
+       position: absolute;
+       width: 30%;
+       left: 0;
+       right: 0;
+       bottom: 15vh;
+       margin: auto;
+   }
+
+
+/*wheel*/
+.wheel{
+    position: absolute;
+    height:30%;
+    width: 100%;
+    bottom: 0;
+}
+
+.wheel>img{
+    position: absolute;
+    width: 6%;
+    left: 0;
+    right: 0;
+    bottom: 16vh;
+    margin: auto;
+    animation-name: wheel;
+    animation-duration: 5s;
+}
+
+@keyframes wheel {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(1500deg);
+    }
+}
+
+.wheel>img:nth-child(1){
+    position: absolute;
+    left: 17vw;
+    right: 0;
+    margin: auto;
+}
+
+.wheel>img:nth-child(2){
+    position: absolute;
+    left: 0;
+    right: 19vw;
+    margin: auto;
+}
+
+
+
+</style>
+<body>
+
+<!--city-->
+<div class="city">
+    <img src="images/city.png" alt="">
+    <img src="images/city.png" alt="">
+    <img src="images/city.png" alt="">
+</div>
+<!-- road -->
+<div class="road">
+    <img src="images/road.jpg" alt="">
+    <img src="images/road.jpg" alt="">
+</div>
+<!-- car -->
+<div class="car">
+    <img src="images/car.png" alt="">
+</div>
+<!-- wheels -->
+<div class="wheel">
+    <img src="images/wheel.png" alt="">
+    <img src="images/wheel.png" alt="">
+</div>
+</body>
+</html>

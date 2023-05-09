@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assignment/Transistions/CaseFive/caseFive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Transistions/CaseFive/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/caseSix/caseSix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/caseSix/css/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/190655694.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/190655694.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/brixkM.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/brixkM.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/lap.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/lap.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/Images/wp9143560.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/Images/wp9143560.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/caseFive.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/caseFive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFive/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseFour/caseFour.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFour/caseFour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transistions/CaseThree/caseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseThree/caseThree.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/Transistions/CaseFive/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/Animations/caseSix/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -44,9 +52,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations\caseSix\css" />
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Transistions\CaseFive\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Transistions\front" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations" />
     </key>
   </component>
   <component name="RunManager">
@@ -109,7 +122,7 @@
       <workItem from="1683314508017" duration="2847000" />
       <workItem from="1683469883524" duration="3902000" />
       <workItem from="1683520474933" duration="8768000" />
-      <workItem from="1683615213361" duration="1535000" />
+      <workItem from="1683615213361" duration="6240000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

@@ -317,11 +317,13 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 .education>.box-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding:1rem 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding:3rem 0;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    padding-right: 5rem;
+
 }
 
 .education .box-container .box{
@@ -544,6 +546,10 @@ position: absolute;
     position: absolute;
     top: 65vh;
     left: 50%;
+}
+
+#goGitHub>h4>span{
+    color: blue;
 }
 
 

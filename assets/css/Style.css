@@ -575,7 +575,7 @@ position: absolute;
     top: 12vh;
 }
 
-.assignmentImages>img{
+.assignmentImages>a>img{
     box-shadow:4px 1px 4px 0px #2b2a2a;
     border: 1px solid blue;
 }
@@ -590,7 +590,7 @@ position: absolute;
     transform: scale(1.08);
 }
 
-.assignmentImages>img:hover{
+.assignmentImages>a>img:hover{
     transform: scale(1.08);
 }
 /*#goGitHub>#gitButton:hover{*/

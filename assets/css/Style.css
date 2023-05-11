@@ -516,7 +516,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 #projectTitle{
     position: absolute;
-    top: 5vh;
+    top: 2vh;
     left: 50%;
 }
 #projectTitle>span{
@@ -525,12 +525,12 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 .projectImages{
     position: absolute;
-    top: 12vh;
+    top: 15vh;
 
 
 }
 
-.projectImages>img{
+.projectImages>a>img{
     box-shadow:4px 1px 4px 0px #2b2a2a;
     border: 1px solid blue;
 
@@ -586,7 +586,7 @@ position: absolute;
     left: 50%;
 }
 
-.projectImages>img:hover{
+.projectImages>a>img:hover{
     transform: scale(1.08);
 }
 

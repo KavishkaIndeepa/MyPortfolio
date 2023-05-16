@@ -4,6 +4,7 @@
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Animations/CaseFive/caseFive.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/caseFive.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/portfolio/dilsha/My-Portfoliyo" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/example/My" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -103,7 +104,12 @@
       <workItem from="1683700913529" duration="4175000" />
       <workItem from="1683742138126" duration="333000" />
       <workItem from="1683746543402" duration="31000" />
-      <workItem from="1683807748273" duration="9216000" />
+      <workItem from="1683807748273" duration="9624000" />
+      <workItem from="1683861298169" duration="7689000" />
+      <workItem from="1683954788315" duration="8000" />
+      <workItem from="1684136072594" duration="4221000" />
+      <workItem from="1684214254011" duration="3103000" />
+      <workItem from="1684220352437" duration="10513000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

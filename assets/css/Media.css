@@ -1,0 +1,429 @@
+@media all and (max-width: 1440px){
+
+}
+
+
+@media all and (max-width:1024px){
+
+
+    /*------------------------------- main ---------------------------------*/
+    .SubImage{
+        height: 50%;
+    }
+    #SubImg{
+        width:425px;
+        height:500px;
+
+    }
+
+    .Article{
+        top: 41vh;
+    }
+
+    div.Article>div:nth-child(1){
+        font-size: 30px;
+    }
+
+    div.Article>div:nth-child(2){
+        font-size: 30px;
+    }
+
+    div.Article>div:nth-child(3){
+        font-size: 30px;
+    }
+
+
+
+    /*    ------------------------------------- about me ---------------------------*/
+
+    .About{
+        height: 120vh;
+    }
+    .AboutPhoto{
+        top: 7vh;
+    }
+    body>main>section:nth-child(2)>div:nth-child(3){
+        bottom: 36vh;
+    }
+
+
+
+    /*    ------------------ education -----------------------*/
+
+    .education>.box-container{
+        padding-right: 0;
+    }
+
+    .assignmentButton{
+        bottom: 1vh;
+
+    }
+
+
+    /*    --------------------- gallery -------------------------*/
+
+    .Gallery>.images>div{
+        height: 350px;
+        width: 230px;
+    }
+
+
+    /*    --------------------- contact --------------------------*/
+
+    form.Contact {
+        padding: 0px;
+        width: 35vw;
+    }
+
+
+    /*    ------------------ footer --------------------------*/
+
+    #copyRight{
+        height: 14vh;
+    }
+}
+
+
+
+@media all and (max-width:768px){
+
+    /*----------- header ------------*/
+    .topNav{
+        right: 0;
+        margin: 3px;
+        top: 27px;
+
+    }
+
+
+    /*    --------------------------  main -------------------*/
+    div.Article>div:nth-child(3){
+        font-size: 22px;
+        bottom: 10vh;
+    }
+
+    #SubImg{
+        width: 370px;
+        height: 456px;
+
+    }
+
+
+    /*    ---------------------- about me -------------------*/
+
+    .Information{
+        top: 113px;
+        font-size: 20px;
+    }
+
+    #AboutImg{
+        width: 303px;
+        height: 367px;
+        top: 5vh;
+    }
+
+    body>main>section:nth-child(2)>div:nth-child(3){
+        bottom: 42vh;
+    }
+
+    .Paragraph{
+        font-size: 22px;
+    }
+
+
+    /*    ---------------------------- education ------------------------*/
+
+    .education{
+        height: 150vh;
+    }
+
+    .education .box-container{
+        padding-left: 8rem;
+        padding-top: 4rem;
+    }
+
+    .education .box-container .box {
+        margin: 2rem 1rem;
+    }
+
+
+
+    /*    -----------------------------  skills --------------------------*/
+
+    .certificate{
+        flex-wrap: wrap;
+    }
+
+    #languageHeader{
+        top: 89vh;
+    }
+
+    .languages{
+        top: 95vh;
+    }
+
+    #toolHeader{
+        bottom: 35vh;
+    }
+
+    .tools{
+        top: 137vh;
+    }
+
+
+    /*   -------------------------- Projects ------------------------*/
+
+    .projects{
+        height: 175vh;
+    }
+    #discription {
+        top: 66vh;
+        left:40%;
+    }
+
+    #goGitHub{
+        top: 72vh;
+    }
+
+    .assignmentTitle{
+        top: 12vh;
+    }
+
+    .assignmentImages{
+        top: 21vh;
+    }
+
+    .assignmentButton{
+        top: 80vh;
+        left: 48%;
+    }
+
+
+    .images{
+        position: relative;
+        height: 600px;
+        width: 600px;
+        left: 10vw;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2px;
+    }
+
+    .images>div{
+        border: 1px solid blue;
+    }
+
+
+    /*--------------------- footer --------------------------*/
+
+    #Contact{
+        width: 30%;
+    }
+
+    #ContactSubHead{
+        left: 34vw;
+    }
+
+    .contactInfo{
+        top: 28vh;
+        left: 27vw;
+    }
+
+    #chatBox{
+        top: 86vh;
+        right: 40vw;
+    }
+
+    form.Contact{
+        width: 46vw;
+    }
+
+
+
+    #footer_of_site {
+        margin-top: 75.3vh;
+    }
+
+}
+
+
+
+@media all and (max-width: 425px){
+
+    /*------------------------------ header ---------------------*/
+
+    h1 {
+        font-size: 4em;
+        margin: 0.67em 0;
+    }
+
+    .topNav{
+        top: 111px;
+        right: 29px;
+    }
+
+
+    /*-----------------------------  home page -------------------*/
+
+    main>section>section>div#MainImage{
+       width: 150%;
+    }
+
+
+    #SubImg {
+        right: -45vw;
+        top: 17vh;
+    }
+
+    .Article {
+        top: 45vh;
+        height: 20vh;
+        width: 94vw;
+    }
+
+    div.Article>div:nth-child(1) {
+        font-size: 40px;
+    }
+    div.Article>div:nth-child(2) {
+        font-size: 40px;
+        bottom: 18vh;
+    }
+
+    div.Article>div:nth-child(3) {
+        font-size: 22px;
+        bottom: 8vh;
+    }
+
+    .navButton {
+        bottom: 13vh;
+
+    }
+
+
+/*    ------------------------------ about me ------------------------------*/
+
+    .AboutHead{
+        width: 50%;
+    }
+
+    #AboutImg {
+        width: 203px;
+        height: 301px;
+        left: 1vw;
+    }
+
+    body>main>section:nth-child(2)>div:nth-child(3) {
+        bottom: 57vh;
+    }
+
+    .Paragraph {
+        font-size: 22px;
+        left: 10vh;
+        text-align: center;
+        /* top: 71vh; */
+        bottom: 18vh;
+    }
+
+
+/*    ------------------------------------------ education ----------------------------*/
+
+    .education{
+        height: 130vh;
+    }
+    .educationHead{
+        width: 50%;
+    }
+
+
+/*    ----------------------------- skill ----------------------------------------------*/
+
+    .Skills{
+        height: 200vh;
+    }
+
+    .SkillHead{
+        width: 40%;
+    }
+
+
+    .certificate{
+        top: 15vh;
+        left: 22vw;
+    }
+
+    .certificate>div {
+        height: 302px;
+        width: 430px;
+    }
+
+    #languageHeader{
+        top: 136vh;
+    }
+
+    .languages {
+        top: 143vh;
+        left: 25vw;
+    }
+
+
+    #toolHeader {
+        bottom: 29vh;
+    }
+
+    .tools {
+        top: 174vh;
+        left: 10vw;
+        flex-wrap: wrap;
+    }
+
+    .projects {
+        top: 19vh;
+        height: 355vh;
+    }
+
+    .projectHeader{
+        width: 50%;
+    }
+
+    .projectSection{
+        flex-wrap: wrap;
+    }
+
+    .projectImages{
+        left: 40vw;
+    }
+
+    .projectImages>a>img {
+        width: 277px;
+        height: 345px;
+    }
+
+    #discription {
+        top: 150vh;
+        font-size: 18px;
+    }
+
+    #goGitHub {
+        top: 154vh;
+    }
+
+    .assignmentTitle {
+        top: 93vh;
+    }
+
+    .assignmentImages {
+        top: 103vh;
+        left: 42vw;
+    }
+
+    .assignmentImages>a>img {
+        width: 277px;
+        height: 345px;
+    }
+
+    .assignmentButton {
+        top: 240vh;
+    }
+
+}

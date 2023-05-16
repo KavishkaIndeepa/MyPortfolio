@@ -128,7 +128,7 @@ body {
 body > main{
     position: relative;
     width: 100%;
-    top: 85px;
+    top: 81px;
 }
 
 
@@ -156,10 +156,14 @@ main>section>section>div#MainImage{
     top: 50px;
     height: 90%;
 
-
-
 }
 
+#SubImg{
+    position: absolute;
+    width:433px;
+    height:547px;
+    right: 0;
+}
 main>section>{
 
     top: 85px;
@@ -169,7 +173,7 @@ main>section>{
 
 .Article{
     position: absolute;
-    width: 90vh;
+    width: 53vw;
     height: 250px;
     z-index: 1;
     bottom: 206px;
@@ -183,13 +187,13 @@ div.Article>div:nth-child(1){
     font-family: Koulen, Rockwell;
     font-size: 50px;
     bottom: 300px;
-    right: 85vh;
+    left: 3vw;
 
 }
 
 div.Article>div:nth-child(2){
     position: absolute;
-    right: 100px;
+   left: 5vw;
     color: white;
     font-family: Koulen, Rockwell;
     font-size: 50px;
@@ -278,12 +282,18 @@ main>section.homePage>div.navButton>img{
 
 .AboutPhoto{
     position: absolute;
-    right: 1vw;
+    right: 0;
     top: 2vh;
     /*border: 1px solid black;*/
-    background: linear-gradient(to right, #f6f8f8, #36393e);;
+    /*background: linear-gradient(to right, #f6f8f8, #36393e);*/
 }
-
+#AboutImg{
+    position: absolute;
+    width:419px;
+    height:428px;
+    right: 0;
+    background: linear-gradient(to right, #f6f8f8, #36393e);
+}
 .Information{
     position: absolute;
     left: 20px;
@@ -453,6 +463,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     background-image: url("../image/cert-CT-FYZEUYOC (1).png");
     background-size: cover;
     background-position: center;
+
 }
 .certificate>div:nth-child(2){
     background-image: url("../image/cert-CT-OFIWOA82 (1).png");
@@ -488,7 +499,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
     /*border: 1px solid black;*/
     position: absolute;
     width: 100%;
-    top: 70vh;
+    top: 76vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -506,7 +517,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 #languageHeader{
     position: absolute;
-    left: 50%;
+    left: 48%;
     top: 65vh;
     font-family: Koulen, Rockwell;
     font-size: 30px;
@@ -525,7 +536,7 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 #toolHeader{
     position: absolute;
     left: 50%;
-    bottom: 18vh;
+    bottom: 55vh;
     font-family: Koulen, Rockwell;
     font-size: 30px;
 }
@@ -851,14 +862,14 @@ button:hover {
 
 /*------------------------------------------------------------ Footer ----------------------------------------------*/
 
-#copyRight{
+#footer_of_site{
     margin-top: 13.3vh;
     height: 10vh;
     background: rgba(0, 0, 0, 0.82);
     border-top: 3px solid blue;
 }
 
-#copyRight>p{
+#footer_of_site>p{
     color: white;
     font-family: 'poppins', sans-serif ;
     font-size: 0.9em;
@@ -866,20 +877,6 @@ button:hover {
     padding-top: 5px;
     margin-top: 5px;
 }
-/*#copyRight{*/
-/*    position: absolute;*/
-/*    margin-top: 13.3vh;*/
-/*    bottom: 0;*/
-/*    width: 99vw;*/
-/*    height: 5vh;*/
-/*    background: rgba(0, 0, 0, 0.82);*/
-/*    border-top: 3px solid blue;*/
-/*    text-align: center;*/
-/*}*/
-
-/*#copyRight>small{*/
-/*    color: white;*/
-/*    font-family: 'poppins', sans-serif ;*/
 
 /*}*/
 /*------------------------------------*/
@@ -890,7 +887,253 @@ button:hover {
 
 /*--------------------------------------------------  Media Quary  --------------------------------------------*/
 
-@media all and (max-width:320px){
+/*@media all and (max-width: 1440px){*/
 
-}
+/*}*/
+
+
+/*@media all and (max-width:1024px){*/
+
+
+/*    !*------------------------------- main ---------------------------------*!*/
+/*    .SubImage{*/
+/*        height: 50%;*/
+/*    }*/
+/*    #SubImg{*/
+/*        width:425px;*/
+/*        height:500px;*/
+
+/*    }*/
+
+/*    .Article{*/
+/*        top: 41vh;*/
+/*    }*/
+
+/*    div.Article>div:nth-child(1){*/
+/*        font-size: 30px;*/
+/*    }*/
+
+/*    div.Article>div:nth-child(2){*/
+/*        font-size: 30px;*/
+/*    }*/
+
+/*    div.Article>div:nth-child(3){*/
+/*        font-size: 30px;*/
+/*    }*/
+
+
+
+/*!*    ------------------------------------- about me ---------------------------*!*/
+
+/*    .About{*/
+/*        height: 120vh;*/
+/*    }*/
+/*    .AboutPhoto{*/
+/*        top: 7vh;*/
+/*    }*/
+/*    body>main>section:nth-child(2)>div:nth-child(3){*/
+/*        bottom: 36vh;*/
+/*    }*/
+
+
+
+/*!*    ------------------ education -----------------------*!*/
+
+/*    .education>.box-container{*/
+/*        padding-right: 0;*/
+/*    }*/
+
+/*    .assignmentButton{*/
+/*        bottom: 1vh;*/
+
+/*    }*/
+
+
+/*!*    --------------------- gallery -------------------------*!*/
+
+/*    .Gallery>.images>div{*/
+/*        height: 350px;*/
+/*        width: 230px;*/
+/*    }*/
+
+
+/*!*    --------------------- contact --------------------------*!*/
+
+/*    form.Contact {*/
+/*        padding: 0px;*/
+/*        width: 35vw;*/
+/*    }*/
+
+
+/*!*    ------------------ footer --------------------------*!*/
+
+/*    #copyRight{*/
+/*        height: 14vh;*/
+/*    }*/
+/*}*/
+
+
+
+/*@media all and (max-width:768px){*/
+
+/*    !*----------- header ------------*!*/
+/*    .topNav{*/
+/*        right: 0;*/
+/*        margin: 3px;*/
+/*        top: 27px;*/
+
+/*    }*/
+
+
+/*!*    --------------------------  main -------------------*!*/
+/*    div.Article>div:nth-child(3){*/
+/*        font-size: 22px;*/
+/*        bottom: 10vh;*/
+/*    }*/
+
+/*    #SubImg{*/
+/*        width: 370px;*/
+/*        height: 456px;*/
+
+/*    }*/
+
+
+/*!*    ---------------------- about me -------------------*!*/
+
+/*    .Information{*/
+/*        top: 113px;*/
+/*        font-size: 20px;*/
+/*    }*/
+
+/*    #AboutImg{*/
+/*        width: 303px;*/
+/*        height: 367px;*/
+/*        top: 5vh;*/
+/*    }*/
+
+/*    body>main>section:nth-child(2)>div:nth-child(3){*/
+/*        bottom: 42vh;*/
+/*    }*/
+
+/*    .Paragraph{*/
+/*        font-size: 22px;*/
+/*    }*/
+
+
+/*!*    ---------------------------- education ------------------------*!*/
+
+/*    .education{*/
+/*        height: 150vh;*/
+/*    }*/
+
+/*    .education .box-container{*/
+/*        padding-left: 8rem;*/
+/*        padding-top: 4rem;*/
+/*    }*/
+
+/*    .education .box-container .box {*/
+/*        margin: 2rem 1rem;*/
+/*    }*/
+
+
+
+/*!*    -----------------------------  skills --------------------------*!*/
+
+/*    .certificate{*/
+/*        flex-wrap: wrap;*/
+/*    }*/
+
+/*    #languageHeader{*/
+/*        top: 89vh;*/
+/*    }*/
+
+/*    .languages{*/
+/*        top: 95vh;*/
+/*    }*/
+
+/*    #toolHeader{*/
+/*        bottom: 35vh;*/
+/*    }*/
+
+/*   .tools{*/
+/*       top: 137vh;*/
+/*   }*/
+
+
+/*!*   -------------------------- Projects ------------------------*!*/
+
+/*    .projects{*/
+/*        height: 175vh;*/
+/*    }*/
+/*    #discription {*/
+/*        top: 66vh;*/
+/*        left:40%;*/
+/*    }*/
+
+/*    #goGitHub{*/
+/*        top: 72vh;*/
+/*    }*/
+
+/*    .assignmentTitle{*/
+/*        top: 12vh;*/
+/*    }*/
+
+/*    .assignmentImages{*/
+/*        top: 21vh;*/
+/*    }*/
+
+/*    .assignmentButton{*/
+/*        top: 80vh;*/
+/*        left: 48%;*/
+/*    }*/
+
+
+/*    .images{*/
+/*        position: relative;*/
+/*        height: 600px;*/
+/*        width: 600px;*/
+/*        left: 10vw;*/
+/*        display: grid;*/
+/*        grid-template-rows: repeat(2,1fr);*/
+/*        grid-template-columns: repeat(3,1fr);*/
+/*        grid-gap: 2px;*/
+/*    }*/
+
+/*    .images>div{*/
+/*        border: 1px solid blue;*/
+/*    }*/
+
+
+/*    !*--------------------- footer --------------------------*!*/
+
+/*    #Contact{*/
+/*        width: 30%;*/
+/*    }*/
+
+/*    #ContactSubHead{*/
+/*        left: 34vw;*/
+/*    }*/
+
+/*    .contactInfo{*/
+/*        top: 28vh;*/
+/*        left: 27vw;*/
+/*    }*/
+
+/*    #chatBox{*/
+/*        top: 86vh;*/
+/*        right: 40vw;*/
+/*    }*/
+
+/*    form.Contact{*/
+/*        width: 46vw;*/
+/*    }*/
+
+
+
+/*    #footer_of_site {*/
+/*        margin-top: 75.3vh;*/
+/*    }*/
+
+/*    }*/
+
 

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/fontAwsom/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="assets/css/Style.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/Media.css">
 
 
 </head>
@@ -41,6 +42,7 @@
 
     </header>
 
+
     <main>
         <!-- 1 -->
         <section class="homePage" id="home">
@@ -51,7 +53,7 @@
             </section>
 
 
-              <div class="SubImage"><img src="assets/image/kavishka.png" alt="Wallpaper"></div>
+              <div class="SubImage"><img id="SubImg" src="assets/image/kavishka.png" alt="Wallpaper"></div>
 
 
 
@@ -121,7 +123,7 @@
 <!--            </section>-->
 
 
-                <div class="AboutPhoto"><img width="419" height="428" src="assets/image/img.png" alt="Wallpaper"></div>
+                <div class="AboutPhoto"><img id="AboutImg" src="assets/image/img.png" alt="Wallpaper"></div>
                <div class="DownloadButton">
                 <nav>
                     <button>Download CV</button>
@@ -197,9 +199,9 @@
             </section>
 
             <!-- 4.3 -->
-            <section class="tools">
-                <h3 id="toolHeader">Tools</h3>
 
+            <h3 id="toolHeader">Tools</h3>
+            <section class="tools">
                 <img width="70" src="assets/image/idia.jpeg" alt="idia">
                 <img width="70" height="65" src="assets/image/figmas.jpeg" alt="figma">
                 <img width="70" height="68" src="assets/image/netbeans.jpeg" alt="netbeans">
@@ -248,9 +250,6 @@
             <section class="assignmentSection">
                 <h2 class="assignmentTitle">My <span>Assignments</span></h2>
             <div class="assignmentImages">
-                <a href="assignment/css/case01.html" target="_blank">
-                    <img width="200" height="300" src="assets/image/cssAssignmentOne.png" alt="">
-                </a>
                 <a href="assignment/Animations/CaseFour/caseFour.html" target="_blank">
                     <img width="200" height="300" src="assets/image/AnimationCaseFour.gif" alt="">
                 </a>
@@ -259,9 +258,6 @@
                 </a>
                 <a href="assignment/Animations/CaseThree/caseThree.html" target="_blank">
                     <img width="200" height="300" src="assets/image/AnimationCaseThree.gif" alt="">
-                </a>
-                <a href="assignment/Transistions/CaseOne/case_01.html" target="_blank">
-                    <img width="200" height="300" src="assets/image/transictionCaseOne.gif" alt="">
                 </a>
             </div>
                 <div class="assignmentButton">
@@ -362,13 +358,15 @@
 
     </main>
 
-
-
-    <footer id="copyRight">
-
-            <p>© Copyright 2023 Kavishka Indeepa.</p>
+    <footer id="footer_of_site">
+        <p>© Copyright 2023 Kavishka Indeepa.</p>
         <p>All Rights Reserved.</p>
     </footer>
+
+<!--    <footer id="copyRight">-->
+
+
+<!--    </footer>-->
 
 </body>
 

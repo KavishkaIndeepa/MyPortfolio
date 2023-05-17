@@ -54,7 +54,7 @@ body>header>h1{
     right: 20px;
     top: 7px;
     font-family: Rockwell;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin: 20px;
     color: white;
 }

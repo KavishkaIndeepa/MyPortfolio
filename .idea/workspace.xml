@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assets/css/Media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Media.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,7 @@
       <workItem from="1683954788315" duration="8000" />
       <workItem from="1684136072594" duration="4221000" />
       <workItem from="1684214254011" duration="3103000" />
-      <workItem from="1684220352437" duration="36580000" />
+      <workItem from="1684220352437" duration="47546000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

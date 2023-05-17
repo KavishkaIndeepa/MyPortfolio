@@ -5,9 +5,10 @@
     }
 
     .topNav {
-        right: 20px;
-        top: 66px;
-        margin: 20px;
+        /*right: 20px;*/
+        /*top: 66px;*/
+        /*margin: 20px;*/
+        display: none;
 
     }
     /*------------------------------- main --------------------------------*/
@@ -445,125 +446,106 @@
 
 }
 
-@media all and (min-width: 425px) and (max-width: 767px){
+@media all and (min-width: 425px) and (max-width: 767px) {
 
 
-    /*------------------------------ header ---------------------*/
-    h1 {
-        font-size: 2em;
-        margin: 0.67em 0;
-    }
-
-    .topNav {
-        top: 37px;
-        right: 54px;
-    }
-
-
-    /*-----------------------------  home page -------------------*/
-    main > section > section > div#MainImage {
-        /*width: 150%;*/
-        width: 155%;
-    }
-
-
-    #SubImg {
-        right: -56vw;
-        top: -8vh;
-        width: 436px;
-        height: 472px
-    }
-
-    .Article {
-        top: 45vh;
-        height: 20vh;
-        width: 94vw;
-    }
-
-    div.Article > div:nth-child(1) {
-        font-size: 40px;
-    }
-
-    div.Article > div:nth-child(2) {
-        font-size: 40px;
-        bottom: 18vh;
-    }
-
-    div.Article > div:nth-child(3) {
-        font-size: 22px;
-        bottom: 8vh;
-    }
-
-    .navButton {
-        bottom: 13vh;
+    /*--------------------------------header------------------------------------------*/
+    .topNav{
 
     }
 
 
-    /*    ------------------------------ about me ------------------------------*/
-    .About {
-        height: 135vh;
+/*    ------------------------------------ Main ----------------------------------------*/
+
+    main>section>section>div#MainImage{
+        width: 131%;
+
     }
 
-    .AboutHead {
-        width: 50%;
+    #SubImg{
+        width: 400px;
+        height: 450px;
     }
 
-    #AboutImg {
+    .SubImage{
+        right: -34vw;
+    }
+
+    .Article{
+        width: 95vw;
+        bottom: 174px;
+    }
+
+    div.Article>div:nth-child(1){
+        font-size: 36px;
+    }
+
+    div.Article>div:nth-child(2){
+        font-size: 30px;
+    }
+    div.Article>div:nth-child(3){
+        font-size: 30px;
+    }
+
+
+/*    --------------------------- About -----------------------------*/
+
+    .About{
+        height: 126vh;
+    }
+    #AboutImg{
         width: 203px;
-        height: 301px;
-        left: 1vw;
+        height: 297px;
     }
 
     .AboutPhoto{
+        right: -31vw;
         top: 12vh;
-        right: -7vw;;
     }
 
-    body > main > section:nth-child(2) > div:nth-child(3) {
-        bottom: 57vh;
-    }
-
-    .Paragraph {
-        /*font-size: 22px;*/
-        /*left: 10vh;*/
-        /*text-align: center;*/
-        /*width: 130vw;*/
-        /*bottom: 18vh;*/
-        ont-size: 22px;
-        left: 4vh;
-        width: 125vw;
-        bottom: 18vh;
+    .AboutHead{
+        width: 50%;
     }
 
     .Information{
+        left: 7px;
+        top: 78px;
+        font-size: 20px;
+
+    }
+
+    body>main>section:nth-child(2)>div:nth-child(3) {
+        bottom: 53vh;
+    }
+
+    .Paragraph{
+        bottom: 27vh;
+        width: 110vw;
         font-size: 18px;
-        left: 9px
-
     }
 
-    .Information>li {
-        margin: 23px;
+    .DownloadButton{
+        bottom: 56px;
+        right: 84px;
     }
 
+/*    ---------------------------------  education ------------------------*/
 
-    /*    ------------------------------------------ education ----------------------------*/
     .education {
-        height: 209vh;
+        height: 224vh;
     }
     .educationHead {
         width: 50%;
     }
 
 
-    /*    ----------------------------- skill ----------------------------------------------*/
+/*    ------------------------------------ Skills ------------------------------*/
     .Skills {
-        height: 290vh;
+        height: 280vh;
     }
 
     .SkillHead {
-        width: 40%;
-        top: 13vh;
+        width: 50%;
     }
 
 
@@ -573,35 +555,32 @@
         flex-wrap: wrap;
     }
 
-    .certificate > div {
-        height: 302px;
-        width: 430px;
-    }
 
     #languageHeader {
-        top: 185vh;
+        top: 146vh;
     }
 
     .languages {
-        top: 197vh;
-        left: 25vw;
+        top: 165vh;
+        left: 14vw;
     }
 
 
     #toolHeader {
-        bottom: 55vh;
+        bottom: 84vh;
     }
 
     .tools {
-        top: 242vh;
-        left: 10vw;
+        top: 211vh;
+        left: 14vw;
         flex-wrap: wrap;
     }
 
+
+
     /*----------------------------------  project --------------------------*/
     .projects {
-        top: 19vh;
-        height: 460vh;
+        height: 412vh;
     }
 
     .projectHeader {
@@ -612,56 +591,47 @@
         flex-wrap: wrap;
     }
 
-    .projectImages {
-        left: 40vw;
+    #projectTitle{
+        top: 9vh;
     }
 
-    .projectImages > a > img {
-        width: 277px;
-        height: 345px;
+    .projectImages {
+        left: 40vw;
+        top: 19vh;
     }
 
     #discription {
-        top: 194vh;
+        top: 175vh;
         font-size: 16px;
     }
 
     #goGitHub {
-        top: 200vh;
+        top: 184vh;
     }
 
     .assignmentTitle {
-        top: 148vh;
+        top: 134vh;
     }
 
     .assignmentImages {
-        top: 160vh;
+        top: 148vh;
         left: 42vw;
     }
 
-    .assignmentImages > a > img {
-        width: 277px;
-        height: 345px;
-    }
-
     .assignmentButton {
-        top: 337vh;
+        top: 307vh;
         left: 50%;
     }
 
-
     /*    ----------------------------- Gallery ------------------------------------*/
-    .Gallery {
-        height: 90vh;
-    }
 
     #galleryHead {
         width: 50%;
     }
 
-    .images {
-        left: 4vw;
-        height: 78vh;
+    .Gallery>.images {
+        top: 17vh;
+        left: 14vw;
     }
 
     .Gallery > .images > div {
@@ -676,7 +646,17 @@
     }
 
     #ContactSubHead {
-        font-size: 34px;
+        font-size: 30px;
+        left: 33vw;
+    }
+
+    .contactInfo{
+        top: 24vh;
+        font-size: 10px;
+        left: 19vw;
+    }
+    #NavButtons{
+        margin-top: 24px;
     }
 
     #ContactDetail > label {
@@ -685,7 +665,7 @@
     }
 
     form.Contact {
-        width: 89vw;
+        width: 97vw;
     }
 
     Contact > label {
@@ -702,14 +682,14 @@
         margin-top: 10px;
     }
 
-
     /*    -------------------------------------- footer ----------------------------------*/
     #footer_of_site {
-        margin-top: 86.3vh;
-        width: 155%;
+        margin-top: 73.3vh;
+        width: 131%;
     }
 
 }
+
 
 @media all and (min-width:768px) and  (max-width:1023px){
 

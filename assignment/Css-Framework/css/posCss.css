@@ -1,0 +1,58 @@
+.main{
+    background-image: url("../assest/hangers.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 89vh;
+    width: 100%;
+
+}
+
+
+.container-fluid{
+    /*background-color: yellow;*/
+
+}
+
+.container-fluid>h1{
+    color: black;
+}
+
+.nav-item>.nav-link{
+    color: black;
+}
+
+
+
+.nav-link:hover, .nav-link:focus {
+    color: red;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: rgb(231 21 21);
+}
+
+.btn{
+    color: black;
+}
+
+.btn-outline-success{
+    color: blue;
+}
+
+.navbar-toggler-icon{
+    color: var(--bs-navbar-color);
+}
+
+
+
+/*customer*/
+
+.customer{
+    position: relative;
+}
+.table{
+    position: absolute;
+    top: 10vh;
+    width: 50vw;
+}
+

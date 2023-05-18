@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Css-Framework/POS/customerPos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Css-Framework/POS/itemPos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Css-Framework/POS/orderDetailPos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Css-Framework/POS/orderPos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Css-Framework/POS/pos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Css-Framework/css/posCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +119,7 @@
       <workItem from="1684214254011" duration="3103000" />
       <workItem from="1684220352437" duration="64301000" />
       <workItem from="1684346008859" duration="5781000" />
-      <workItem from="1684391399908" duration="23848000" />
+      <workItem from="1684391399908" duration="24293000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

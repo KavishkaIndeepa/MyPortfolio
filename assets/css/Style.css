@@ -56,7 +56,7 @@ body>header>h1{
     font-family: Rockwell;
     /*border: 1px solid black;*/
     margin: 20px;
-    color: white;
+    color: black;
 }
 
 .topnav-btn::after {
@@ -923,7 +923,7 @@ button:hover {
     margin: 10px 0 15px 0;
 }
 
-h1{
+.my_Assignment>h1{
     position: absolute;
     left: 40vw;
     color: white;

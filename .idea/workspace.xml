@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
+      <change afterPath="$PROJECT_DIR$/projects/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Media.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +125,11 @@
       <workItem from="1684214254011" duration="3103000" />
       <workItem from="1684220352437" duration="64301000" />
       <workItem from="1684346008859" duration="5781000" />
-      <workItem from="1684391399908" duration="25207000" />
+      <workItem from="1684391399908" duration="26662000" />
+      <workItem from="1684466005720" duration="3734000" />
+      <workItem from="1684473509383" duration="28000" />
+      <workItem from="1684477126743" duration="9000" />
+      <workItem from="1684510551752" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

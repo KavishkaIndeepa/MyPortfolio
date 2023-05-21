@@ -592,25 +592,25 @@ body>main>section:nth-child(2)>div:nth-child(3)>img{
 
 #projectTitle{
     position: absolute;
-    top: 2vh;
+    top: 6vh;
     left: 50%;
 }
 #projectTitle>span{
     color: blue;
 }
 
-.projectImages{
-    position: absolute;
-    top: 15vh;
+/*.projectImages{*/
+/*    position: absolute;*/
+/*    top: 15vh;*/
 
 
-}
+/*}*/
 
-.projectImages>a>img{
-    box-shadow:4px 1px 4px 0px #2b2a2a;
-    border: 1px solid blue;
+/*.projectImages>a>img{*/
+/*    box-shadow:4px 1px 4px 0px #2b2a2a;*/
+/*    border: 1px solid blue;*/
 
-}
+/*}*/
 
 #discription{
 position: absolute;
@@ -627,6 +627,43 @@ position: absolute;
 #goGitHub>h4>span{
     color: blue;
 }
+
+.projectSection .box-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:4rem 0;
+}
+
+.projectSection .box-container .box{
+    height: 14rem;
+    width: 16rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin:2rem;
+}
+
+.projectSection .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.projectSection .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.projectSection .box-container .assignment-title {
+    font-size: 20px;
+    color: #0c5fed;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
+
+
 
 
 .assignmentSection{
@@ -646,15 +683,55 @@ position: absolute;
     color: blue;
 }
 
-.assignmentImages{
-    position: absolute;
-    top: 12vh;
+/*.assignmentImages{*/
+/*    position: absolute;*/
+/*    top: 12vh;*/
+/*}*/
+
+/*.assignmentImages>a>img{*/
+/*    box-shadow:4px 1px 4px 0px #2b2a2a;*/
+/*    border: 1px solid blue;*/
+/*}*/
+
+.assignmentSection .box-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:4rem 0;
+
 }
 
-.assignmentImages>a>img{
-    box-shadow:4px 1px 4px 0px #2b2a2a;
-    border: 1px solid blue;
+.assignmentSection .box-container .box{
+    height: 14rem;
+    width: 16rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin:2rem;
+
+
 }
+
+.assignmentSection .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    box-shadow:4px 1px 4px 0px #2b2a2a;
+}
+
+.assignmentSection .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.assignmentSection .box-container .assignment-title {
+    font-size: 20px;
+    color: #0c5fed;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
+
 
 .assignmentButton{
     position: absolute;

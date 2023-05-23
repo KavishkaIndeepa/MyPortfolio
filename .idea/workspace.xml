@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
+      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/assest/hangers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/MediaNew.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/MediaNew.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/portfolio/nimesha/MyPortfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/SPA/assest" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -44,16 +44,29 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\assest" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations\caseSix\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Transistions\CaseFive\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Transistions\front" />
-      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,7 +132,7 @@
       <workItem from="1684643425280" duration="5726000" />
       <workItem from="1684737396647" duration="3351000" />
       <workItem from="1684760079925" duration="13683000" />
-      <workItem from="1684841470713" duration="4304000" />
+      <workItem from="1684841470713" duration="10792000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

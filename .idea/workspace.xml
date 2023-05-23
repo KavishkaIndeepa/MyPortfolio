@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assets/css/MediaNew.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/MediaNew.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/MediaNew.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +118,8 @@
       <workItem from="1684510551752" duration="4068000" />
       <workItem from="1684643425280" duration="5726000" />
       <workItem from="1684737396647" duration="3351000" />
-      <workItem from="1684760079925" duration="13348000" />
+      <workItem from="1684760079925" duration="13683000" />
+      <workItem from="1684841470713" duration="4304000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

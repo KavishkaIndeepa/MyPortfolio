@@ -637,9 +637,9 @@ body>main{
 
     }
     .topnav-btn {
-
-        font-size: 28px;
+        font-size: 18px;
     }
+
 
     /*    --------------------------  main -------------------*/
 
@@ -786,9 +786,18 @@ body>main{
 }
 
 
-@media all and (min-width:1024px) and (max-width: 1440px){
+@media all and (min-width:1024px) and (max-width: 1439px){
+
+    /*------------------------- header ------------------------------------*/
+    .topnav-btn{
+        font-size: 25px;
+    }
+
 
     /*------------------------------- main ---------------------------------*/
+
+
+
     .SubImage{
         height: 50%;
     }
@@ -862,4 +871,14 @@ body>main{
         font-size: 20px;
     }
 
+}
+
+@media all and (min-width:1440px) {
+    .topnav-btn{
+        font-size: 25px;
+    }
+
+    #footer_of_site {
+        margin-top: 17.3vh;
+    }
 }

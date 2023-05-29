@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/assest/hangers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/Customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/SPA/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/SPA/assest" />
+    <property name="last_opened_file_path" value="F:/Network Programming/Socket-Programming-Java-chatApplication" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,7 +135,15 @@
       <workItem from="1684643425280" duration="5726000" />
       <workItem from="1684737396647" duration="3351000" />
       <workItem from="1684760079925" duration="13683000" />
-      <workItem from="1684841470713" duration="10792000" />
+      <workItem from="1684841470713" duration="11352000" />
+      <workItem from="1684908841463" duration="10816000" />
+      <workItem from="1685021100047" duration="1794000" />
+      <workItem from="1685071880537" duration="792000" />
+      <workItem from="1685086910833" duration="73000" />
+      <workItem from="1685095716241" duration="2160000" />
+      <workItem from="1685118299049" duration="3382000" />
+      <workItem from="1685204850159" duration="621000" />
+      <workItem from="1685346468616" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

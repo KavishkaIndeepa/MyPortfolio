@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/Customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/Order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/QUEUE/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/jquery-3.7.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/SPA/index.html" afterDir="false" />
     </list>
@@ -17,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -37,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/Network Programming/Socket-Programming-Java-chatApplication" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/SPA/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,13 +46,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\js" />
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\assest" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations\caseSix\css" />
-      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Transistions\CaseFive\css" />
-      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Transistions\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations" />
     </key>
@@ -143,7 +143,11 @@
       <workItem from="1685095716241" duration="2160000" />
       <workItem from="1685118299049" duration="3382000" />
       <workItem from="1685204850159" duration="621000" />
-      <workItem from="1685346468616" duration="2080000" />
+      <workItem from="1685346468616" duration="2961000" />
+      <workItem from="1685351485629" duration="9000" />
+      <workItem from="1685352182215" duration="7000" />
+      <workItem from="1685356565852" duration="622000" />
+      <workItem from="1685590520166" duration="7719000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUEUE</title>
+<!--  <link rel="stylesheet" href="../../../assets/css/css/bootstrap.css">-->
+  <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=0.5 maximum-scale=2">
+
+</head>
+
+<style>
+
+    body{
+        background-color: #4d5154;
+
+    }
+    body>h2{
+        color: white;
+        position: absolute;
+        left: 50%;
+    }
+  section{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 200px;
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+
+  }
+  section div{
+    height: calc(200px/4);
+    border-radius: 10px;
+      /*border: 1px solid black;*/
+  }
+
+  section> div:nth-child(1) {
+    grid-row: 1;
+    /*background-color: red;*/
+
+  }
+  section > div:nth-child(2) {
+    grid-row: 3;
+    grid-column: 3;
+    /*background-color: green;*/
+
+  }
+  section > div:nth-child(3) {
+    grid-row: 3;
+    grid-column: 4;
+    /*background-color: blue;*/
+
+  }
+  section > div:nth-child(4) {
+    grid-row: 3;
+    grid-column: 5;
+    /*background-color: yellow;*/
+
+  }
+  section > div:nth-child(5) {
+    grid-row: 3;
+    grid-column: 6;
+    /*background-color: plum;*/
+
+  }
+
+  section > div:nth-child(6) {
+    grid-row: 5;
+    grid-column: 8;
+    /*background-color: deeppink;*/
+
+  }
+    section > div:nth-child(7) {
+        grid-row: 2;
+        grid-column: 1/9;
+        height: 3px;
+        background-color: white;
+        /*background-color: deeppink;*/
+
+    }
+    section > div:nth-child(8) {
+        grid-row: 4;
+        grid-column: 1/9;
+        height: 3px;
+        background-color: white;
+        /*background-color: deeppink;*/
+
+    }
+
+
+</style>
+
+</head>
+<body>
+<h2>Java Script Queue</h2>
+<section>
+  <div id="1"></div>
+  <div id="2"></div>
+  <div id="3"></div>
+  <div id="4"></div>
+  <div id="5"></div>
+  <div id="6"></div>
+  <div id="7"></div>
+  <div id="8"></div>
+
+</section>
+
+
+<script>
+
+    let colors=["red","yellow","green","deeppink","blue","orange"];
+
+   let divArray=document.querySelector("section").children;
+    setInterval(function () {
+        for (let i = 0; i < divArray.length; i++) {
+            console.log(divArray[i]);
+            divArray[i].style.background = colors[i];
+        }
+
+        let lastel = colors.pop();
+        colors.unshift(lastel);
+    },500);
+
+
+</script>
+<!--<script src="../../../assets/css/js/bootstrap.bundle.js"></script>-->
+</body>
+</html>

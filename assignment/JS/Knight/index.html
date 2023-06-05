@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight</title>
+
+
+</head>
+
+<style>
+    body{
+        position: absolute;
+        top: 50vh;
+        left: 10vw;
+
+    }
+    #knight{
+        position: relative;
+        display: flex;
+        width: 1000px;
+        height: 60px;
+        /*border: 1px solid red;*/
+        align-items: center;
+    }
+
+    #knight>div{
+        height: 100%;
+        width: 200px;
+        border: 1px solid #000000;
+    }
+    #btn{
+        position: absolute;
+        left: 30vw;
+        top: 6vw;
+
+    }
+    #start-btn{
+        background-color: #0d6efd;
+        color: white;
+        width: 7vw;
+        height: 5vh;
+    }
+
+    #stop-btn{
+        background-color: red;
+        color: white;
+        width: 7vw;
+        height: 5vh;
+    }
+
+
+</style>
+<body>
+<section id="knight">
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+
+</section>
+<section id="btn">
+<button id="start-btn">Start</button>
+<button id="stop-btn">Stop</button>
+</section>
+
+<script src="jquery-3.7.0.min.js"></script>
+<script src="kinght.js"></script>
+</body>
+</html>

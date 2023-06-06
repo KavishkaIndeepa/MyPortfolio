@@ -1,50 +1,72 @@
-var colors = ['#93041a', '#a00606', '#d50606', '#d00606', '#e30a0a'];
-var index = 0;
-var isReverse = false;
-var isStop = true;
+let colors = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",  '#400000', "#800000", "#bf0000", "#ff0000"];
+let colors2 = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000",  '#ff0000', "#bf0000", "#800000", "#400000"];
 
+let section = document.querySelector("section");
+let divArray = section.getElementsByTagName("div");
 
-setInterval(setColors, 100);
+let count = 0;
+let reverse = true;
+let interval;
 
-function setColors() {
-    clearColors()
-    if(isStop==false){
-        if(isReverse){
-            reverse();
-        }
-        if (isReverse==false) {
-            if(index==5){
-                isReverse=true;
+function Kitt() {
+
+    interval = setInterval(function () {
+
+        if (reverse) {
+            for (let i = 0; i < divArray.length; i++) {
+                divArray[i].style.backgroundColor = colors[i];
             }
-            if(isReverse==false){
-                $('#knight').children(`div:nth-child(${index + 1})`).css('background-color', colors[index++]);
+
+            let lastValue = colors.pop();
+            colors.unshift(lastValue);
+            count++;
+
+            if (count == 12) {
+                reverse = false;
+            }
+
+        } if (reverse == false) {
+
+            let lastColor = colors2.shift();
+            colors2.push(lastColor);
+
+            for (let i = 0; i < divArray.length; i++) {
+                divArray[i].style.backgroundColor = colors2[i];
+            }
+            count--;
+
+            if (count == 1) {
+                reverse = true;
             }
         }
-    }
+
+    }, 150);
+
 }
 
-
-function reverse() {
-    if(index===-1){
-        index = 0;
-        isReverse=false;
-    }
-    if(isReverse==true){
-        $('#knight').children(`div:nth-child(${index+1})`).css('background-color', colors[index--]);
-    }
-}
+$(document).ready(function () {
+    clearInterval(interval);
+    Kitt();
 
 
-function clearColors() {
-    for (let c = 0; c < 5; c++) {
-        $('#knight').children(`div:nth-child(${c + 1})`).css('background-color', 'white');
-    }
-}
+    $("#start-btn").click(function () {
+        clearInterval(interval);
+        Kitt();
 
-$('#start-btn').click(function () {
-    isStop = false;
+    });
+
 });
 
-$('#stop-btn').click(function () {
-    isStop = true;
+document.querySelector("#stop-btn").addEventListener('click', function () {
+    clearInterval(interval);
+
+});
+
+document.querySelector("#start-btn").addEventListener('click', function () {
+    clearInterval(interval);
+    Kitt();
+});
+
+document.querySelector("#speed-btn").addEventListener('click', function () {
+    Kitt();
 });

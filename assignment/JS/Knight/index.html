@@ -26,7 +26,7 @@
     #knight>div{
         height: 100%;
         width: 200px;
-        border: 1px solid #000000;
+        border: 1px solid white;
     }
     #btn{
         position: absolute;
@@ -48,11 +48,19 @@
         height: 5vh;
     }
 
+    #speed{
+        background-color: chartreuse;
+        color: white;
+        width: 7vw;
+        height: 5vh;
+    }
+
 
 </style>
 <body>
 <section id="knight">
 
+  <div></div>
   <div></div>
   <div></div>
   <div></div>
@@ -64,6 +72,7 @@
 <section id="btn">
 <button id="start-btn">Start</button>
 <button id="stop-btn">Stop</button>
+<button id="speed">Speed</button>
 </section>
 
 <script src="jquery-3.7.0.min.js"></script>

@@ -3,13 +3,14 @@ let colors2 = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000",
 
 let section = document.querySelector("section");
 let divArray = section.getElementsByTagName("div");
+let mySound = new Audio("audio/Knight-Rider-Theme-Song.mp3")
 
 let count = 0;
 let reverse = true;
 let interval;
 
 function Kitt() {
-
+    mySound.play();
     interval = setInterval(function () {
 
         if (reverse) {
@@ -47,19 +48,19 @@ function Kitt() {
 $(document).ready(function () {
     clearInterval(interval);
     Kitt();
-
+    mySound.play();
 
     $("#start-btn").click(function () {
         clearInterval(interval);
         Kitt();
-
+        mySound.play();
     });
 
 });
 
 document.querySelector("#stop-btn").addEventListener('click', function () {
     clearInterval(interval);
-
+    mySound.pause();
 });
 
 document.querySelector("#start-btn").addEventListener('click', function () {

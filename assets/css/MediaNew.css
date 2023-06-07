@@ -52,7 +52,7 @@ body>main{
 
 /*   --------------------------------  about -------------------------*/
 .About{
-    height: 148vh;
+    height: 151vh;
 }
 .AboutHead{
     width: 50%;
@@ -274,7 +274,7 @@ body>main{
     /*    ---------------------------------- about -------------------------*/
 
     .About{
-        height: 148vh;
+        height: 151vh;
     }
     .AboutHead{
         width: 50%;
@@ -475,7 +475,7 @@ body>main{
     }
 /*    --------------------------------- about ------------------*/
     .About{
-        height: 148vh;
+        height: 151vh;
     }
     .AboutHead{
         width: 50%;
@@ -661,7 +661,7 @@ body>main{
     /*    ---------------------- about me -------------------*/
 
     .About{
-        height: 113vh;
+        height: 119vh;
     }
     .Information{
         top: 113px;
@@ -826,7 +826,7 @@ body>main{
     /*    ------------------------------------- about me ---------------------------*/
 
     .About{
-        height: 120vh;
+        height: 132vh;
     }
     .AboutPhoto{
         top: 7vh;
@@ -869,6 +869,10 @@ body>main{
     form.Contact{
         width: 33vw;
         font-size: 20px;
+    }
+
+    #footer_of_site {
+        margin-top: 38.3vh;
     }
 
 }

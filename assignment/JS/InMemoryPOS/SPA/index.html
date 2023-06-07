@@ -460,57 +460,105 @@
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
 
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("MainImage").style.display = 'inline-block';
-        document.getElementById("customer").style.display = 'none';
-        document.getElementById("Item").style.display = 'none';
-        document.getElementById("order").style.display = 'none';
-        document.getElementById("OrderDetail").style.display = 'none';
-    });
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     document.getElementById("MainImage").style.display = 'inline-block';
+    //     document.getElementById("customer").style.display = 'none';
+    //     document.getElementById("Item").style.display = 'none';
+    //     document.getElementById("order").style.display = 'none';
+    //     document.getElementById("OrderDetail").style.display = 'none';
+    // });
 
-    document.getElementById("homeForm").addEventListener('click', function () {
-        document.getElementById("MainImage").style.display = 'inline-block';
-        document.getElementById("customer").style.display = 'none';
-        document.getElementById("Item").style.display = 'none';
-        document.getElementById("order").style.display = 'none';
-        document.getElementById("OrderDetail").style.display = 'none';
-    });
-
-
-    document.getElementById("customerForm").addEventListener('click', function () {
-        document.getElementById("MainImage").style.display = 'none';
-        document.getElementById("customer").style.display = 'inline-block';
-        document.getElementById("Item").style.display = 'none';
-        document.getElementById("order").style.display = 'none';
-        document.getElementById("OrderDetail").style.display = 'none';
-    });
-
-    document.getElementById("itemForm").addEventListener('click', function () {
-        document.getElementById("MainImage").style.display = 'none';
-        document.getElementById("customer").style.display = 'none';
-        document.getElementById("Item").style.display = 'inline-block';
-        document.getElementById("order").style.display = 'none';
-        document.getElementById("OrderDetail").style.display = 'none';
+    $("DOMContentLoaded", function () {
+        $("#MainImage").css("display", 'inline-block');
+        $("#customer").css("display", 'none');
+        $("#Item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#OrderDetail").css("display", 'none');
     });
 
 
-    document.getElementById("orderForm").addEventListener('click', function () {
-        document.getElementById("MainImage").style.display = 'none';
-        document.getElementById("customer").style.display = 'none';
-        document.getElementById("Item").style.display = 'none';
-        document.getElementById("order").style.display = 'inline-block';
-        document.getElementById("OrderDetail").style.display = 'none';
+    // document.getElementById("homeForm").addEventListener('click', function () {
+    //     document.getElementById("MainImage").style.display = 'inline-block';
+    //     document.getElementById("customer").style.display = 'none';
+    //     document.getElementById("Item").style.display = 'none';
+    //     document.getElementById("order").style.display = 'none';
+    //     document.getElementById("OrderDetail").style.display = 'none';
+    // });
+
+    $("#homeForm").click( function () {
+        $("#MainImage").css("display", 'inline-block');
+        $("#customer").css("display", 'none');
+        $("#Item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#OrderDetail").css("display", 'none');
     });
 
 
-    document.getElementById("orderDetailForm").addEventListener('click', function () {
-        document.getElementById("MainImage").style.display = 'none';
-        document.getElementById("customer").style.display = 'none';
-        document.getElementById("Item").style.display = 'none';
-        document.getElementById("order").style.display = 'none';
-        document.getElementById("OrderDetail").style.display = 'inline-block';
+
+    // document.getElementById("customerForm").addEventListener('click', function () {
+    //     document.getElementById("MainImage").style.display = 'none';
+    //     document.getElementById("customer").style.display = 'inline-block';
+    //     document.getElementById("Item").style.display = 'none';
+    //     document.getElementById("order").style.display = 'none';
+    //     document.getElementById("OrderDetail").style.display = 'none';
+    // });
+
+    $("#customerForm").click( function () {
+        $("#MainImage").css("display", 'none');
+        $("#customer").css("display", 'inline-block');
+        $("#Item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#OrderDetail").css("display", 'none');
     });
 
+    // document.getElementById("itemForm").addEventListener('click', function () {
+    //     document.getElementById("MainImage").style.display = 'none';
+    //     document.getElementById("customer").style.display = 'none';
+    //     document.getElementById("Item").style.display = 'inline-block';
+    //     document.getElementById("order").style.display = 'none';
+    //     document.getElementById("OrderDetail").style.display = 'none';
+    // });
+
+    $("#itemForm").click( function () {
+        $("#MainImage").css("display", 'none');
+        $("#customer").css("display", 'none');
+        $("#Item").css("display", 'inline-block');
+        $("#order").css("display", 'none');
+        $("#OrderDetail").css("display", 'none');
+    });
+
+
+    // document.getElementById("orderForm").addEventListener('click', function () {
+    //     document.getElementById("MainImage").style.display = 'none';
+    //     document.getElementById("customer").style.display = 'none';
+    //     document.getElementById("Item").style.display = 'none';
+    //     document.getElementById("order").style.display = 'inline-block';
+    //     document.getElementById("OrderDetail").style.display = 'none';
+    // });
+
+    $("#orderForm").click( function () {
+        $("#MainImage").css("display", 'none');
+        $("#customer").css("display", 'none');
+        $("#Item").css("display", 'none');
+        $("#order").css("display", 'inline-block');
+        $("#OrderDetail").css("display", 'none');
+    });
+
+    //
+    // document.getElementById("orderDetailForm").addEventListener('click', function () {
+    //     document.getElementById("MainImage").style.display = 'none';
+    //     document.getElementById("customer").style.display = 'none';
+    //     document.getElementById("Item").style.display = 'none';
+    //     document.getElementById("order").style.display = 'none';
+    //     document.getElementById("OrderDetail").style.display = 'inline-block';
+    // });
+    $("#orderDetailForm").click( function () {
+        $("#MainImage").css("display", 'none');
+        $("#customer").css("display", 'none');
+        $("#Item").css("display", 'none');
+        $("#order").css("display", 'none');
+        $("#OrderDetail").css("display", 'inline-block');
+    });
 
 
 

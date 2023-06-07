@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/assest/hangers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/js/Customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/js/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/js/Order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/js/jquery-3.7.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/Knight/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/Knight/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/Knight/kinght.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/Knight/kinght.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/Knight" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/InMemoryPOS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,17 +49,30 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\InMemoryPOS" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\Knight" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\assest" />
-      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -136,7 +153,9 @@
       <workItem from="1685590520166" duration="9201000" />
       <workItem from="1685951354325" duration="128000" />
       <workItem from="1685967260991" duration="3415000" />
-      <workItem from="1686039374888" duration="2815000" />
+      <workItem from="1686039374888" duration="3044000" />
+      <workItem from="1686108138026" duration="912000" />
+      <workItem from="1686116488170" duration="2569000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

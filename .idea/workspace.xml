@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +147,7 @@
       <workItem from="1685967260991" duration="3415000" />
       <workItem from="1686039374888" duration="3044000" />
       <workItem from="1686108138026" duration="912000" />
-      <workItem from="1686116488170" duration="2934000" />
+      <workItem from="1686116488170" duration="3450000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

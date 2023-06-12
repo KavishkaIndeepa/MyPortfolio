@@ -1,0 +1,101 @@
+h1{
+    position: relative;
+    color: white;
+    font-size: 30px;
+
+}
+.cal{
+    width: 400px;
+    background: black;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    /*box-shadow: 3px 3px 3px #17181c,*/
+    /*-3px -3px 3px #676e7e;*/
+}
+
+.output{
+    position: relative;
+    left: 6vw;
+    font-size: 3.4rem;
+    text-align: right;
+    margin-bottom: 5vw;
+    width: 80%;
+    border: none;
+    display: block;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: inset 3px 3px 3px #17181c,
+    inset -3px -3px 3px #676e7e;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3px;
+}
+.key:hover{
+    background-color: #0c5fed;
+    color: white;
+}
+
+.key{
+    background: white;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    width: 70px;
+    height: 70px;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 100px;
+}
+#c{
+    position: relative;
+    top: 10vh;
+}
+
+.equal{
+    /*grid-column: 4 /5;*/
+    /*grid-row: 2 / span 4;*/
+    height: auto;
+    border-radius: 30px;
+    color: white;
+    background: black;
+}
+
+.function{
+    background-color:blue;
+    color: white;
+}
+
+.function:hover{
+    color:white;
+    background-color:red;
+
+}
+
+.equal:hover{
+    color:white;
+    background-color:red;
+}
+
+.equal{
+    background-color:gray;
+}
+
+#content{
+    font-size:25px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+#result{
+    background-color: #2c2b2b;
+}

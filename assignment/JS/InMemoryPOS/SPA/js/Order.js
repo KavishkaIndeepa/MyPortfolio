@@ -71,28 +71,24 @@
 
 var orderDB = [];
 
-
 $("#orderAdd").click(function () {
 
-
-    let OrderId = $("#inputId").val();
-    let OrderCode = $("#Ocode").val();
-    let date = $("#inputdate").val();
-    let price=$("#price").val();
-    let Qty=$("#OQty").val();
-
-
-    let orderOb = {
-        id: OrderId,
-        code: OrderCode,
-        date: date,
-        price: price,
-        qty: Qty
-    }
-
-    orderDB.push(orderOb);
+        let OrderId = $("#inputId").val();
+        let OrderCode = $("#Ocode").val();
+        let date = $("#inputdate").val();
+        let price=$("#price").val();
+        let Qty=$("#OQty").val();
 
 
+        let orderOb = {
+            id:OrderId,
+            code:OrderCode,
+            date:date,
+            price:price,
+            qty: Qty
+        }
+
+        orderDB.push(orderOb);
 
 });
 
@@ -109,15 +105,18 @@ $("#getAllOrder").click(function () {
         let price = orderDB[i].price;
         let qty = orderDB[i].qty;
 
-        let row = `<tr>
+
+        let row =`<tr> 
                      <td>${id}</td>
                      <td>${code}</td>
                      <td>${date}</td>
                      <td>${price}</td>
                      <td>${qty}</td>
-                    </tr>`;
 
+                    <tr>`
 
         $("#tblOrder").append(row);
+
     }
+
 });

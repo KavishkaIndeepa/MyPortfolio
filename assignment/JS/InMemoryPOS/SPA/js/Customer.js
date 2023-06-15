@@ -103,14 +103,12 @@ $("#add").click(function () {
 
     customerDB.push(customerOb);
 
- // setTextFieldValues();
- //    bindRowClickEvents();
+ getAllCustomers();
+    searchCustomer();
 });
 
 
-$("#getAll").click(function () {
-
-
+function getAllCustomers() {
     $("#tblCustomer").empty();
 
     //get all customers
@@ -130,33 +128,15 @@ $("#getAll").click(function () {
 
         $("#tblCustomer").append(row);
     }
+}
+
+
+$("#getAll").click(function () {
+getAllCustomers();
+
+
 });
 
-
-
-// function bindRowClickEvents() {
-//     $("#tblCustomer>tr").click(function () {
-//         let id = $(this).children(":eq(0)").text();
-//         let name = $(this).children(":eq(1)").text();
-//         let address = $(this).children(":eq(2)").text();
-//         let date = $(this).children(":eq(3)").text();
-//
-//         $('#inputCId').val(id);
-//         $('#Cname').val(name);
-//         $('#inputAddress').val(address);
-//         $('#Cdate').val(date);
-//
-//     });
-// }
-//
-//
-// function setTextFieldValues(id, name, address, date) {
-//     bindRowClickEvents();
-//     $("#inputCId").val(id);
-//     $("#Cname").val(name);
-//     $("#inputAddress").val(address);
-//     $("#Cdate").val(date);
-// }
 
 $("#tblCustomer").on('click', 'tr', function() {
 
@@ -172,6 +152,7 @@ $("#tblCustomer").on('click', 'tr', function() {
 
 });
 
+//delete
 
 function deleteCustomer(id){
     for (let i = 0; i < customerDB.length; i++) {
@@ -186,28 +167,61 @@ function deleteCustomer(id){
 $("#delete").click(function () {
     let id=$("#inputCId").val();
     let consent=confirm("Do You Want to delete ");
+
     if(consent){
         let response = deleteCustomer(id);
+
         if(response){
             alert("customer deleted")
 
         }else {
-            alert("jjjjj")
+            alert("customer not deleted")
         }
     }
 
-
-    function updateCustomer(id){
-        for (let i = 0; i < customerDB.length; i++) {
-            if(customerDB[i].id==id){
-                customerDB.splice(i,1);
-                return true;
-            }
-        }
-        return false
-    }
 
 });
+
+
+
+$("#update").click(function (){
+    let id= $("#inputCId").val();
+    updateCustomer(id);
+});
+
+
+function updateCustomer(id){
+    if (searchCustomer(id)==undefined) {
+        alert("No such Customer..please check the ID");
+    }else{
+        let consent= confirm("Do you really want to update this customer.?");
+        if (consent) {
+            let customer= searchCustomer(id);
+            //if the customer available can we update.?
+
+            let name = $("#Cname").val();
+            let address = $("#inputAddress").val();
+            let date = $("#Cdate").val();
+
+            customer.name=name;
+            customer.address=address;
+            customer.date=date;
+
+            getAllCustomers();
+        }
+    }
+
+}
+
+function searchCustomer(id){
+    return customerDB.find(function (customer){
+        return customer.id==id;
+    });
+}
+
+
+
+
 
 
 

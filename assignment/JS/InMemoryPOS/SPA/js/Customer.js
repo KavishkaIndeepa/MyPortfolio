@@ -103,8 +103,8 @@ $("#add").click(function () {
 
     customerDB.push(customerOb);
 
-
-
+ // setTextFieldValues();
+ //    bindRowClickEvents();
 });
 
 
@@ -131,3 +131,84 @@ $("#getAll").click(function () {
         $("#tblCustomer").append(row);
     }
 });
+
+
+
+// function bindRowClickEvents() {
+//     $("#tblCustomer>tr").click(function () {
+//         let id = $(this).children(":eq(0)").text();
+//         let name = $(this).children(":eq(1)").text();
+//         let address = $(this).children(":eq(2)").text();
+//         let date = $(this).children(":eq(3)").text();
+//
+//         $('#inputCId').val(id);
+//         $('#Cname').val(name);
+//         $('#inputAddress').val(address);
+//         $('#Cdate').val(date);
+//
+//     });
+// }
+//
+//
+// function setTextFieldValues(id, name, address, date) {
+//     bindRowClickEvents();
+//     $("#inputCId").val(id);
+//     $("#Cname").val(name);
+//     $("#inputAddress").val(address);
+//     $("#Cdate").val(date);
+// }
+
+$("#tblCustomer").on('click', 'tr', function() {
+
+    let id = $(this).children(":eq(0)").text();
+    let name = $(this).children(":eq(1)").text();
+    let address = $(this).children(":eq(2)").text();
+    let date = $(this).children(":eq(3)").text();
+
+    $("#inputCId").val(id);
+    $("#Cname").val(name);
+    $("#inputAddress").val(address);
+    $("#Cdate").val(date);
+
+});
+
+
+function deleteCustomer(id){
+    for (let i = 0; i < customerDB.length; i++) {
+        if(customerDB[i].id==id){
+            customerDB.splice(i,1);
+            return true;
+        }
+    }
+    return false
+}
+
+$("#delete").click(function () {
+    let id=$("#inputCId").val();
+    let consent=confirm("Do You Want to delete ");
+    if(consent){
+        let response = deleteCustomer(id);
+        if(response){
+            alert("customer deleted")
+
+        }else {
+            alert("jjjjj")
+        }
+    }
+
+
+    function updateCustomer(id){
+        for (let i = 0; i < customerDB.length; i++) {
+            if(customerDB[i].id==id){
+                customerDB.splice(i,1);
+                return true;
+            }
+        }
+        return false
+    }
+
+});
+
+
+
+

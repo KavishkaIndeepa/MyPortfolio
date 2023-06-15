@@ -105,3 +105,19 @@ $("#getAllItem").click(function () {
         $("#tblItem").append(row);
     }
 });
+
+$("#tblItem").on('click', 'tr', function() {
+
+    let code = $(this).children(":eq(0)").text();
+    let name = $(this).children(":eq(1)").text();
+    let price = $(this).children(":eq(2)").text();
+    let qty = $(this).children(":eq(3)").text();
+
+    $("#IinputId").val(code);
+    $("#name").val(name);
+    $("#Iprice").val(price);
+    $("#Iqty").val(qty);
+
+});
+
+

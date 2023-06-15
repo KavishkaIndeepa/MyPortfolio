@@ -120,3 +120,21 @@ $("#getAllOrder").click(function () {
     }
 
 });
+
+
+$("#tblOrder").on('click', 'tr', function() {
+
+    let id = $(this).children(":eq(0)").text();
+    let code = $(this).children(":eq(1)").text();
+    let date = $(this).children(":eq(2)").text();
+    let price = $(this).children(":eq(3)").text();
+    let qty = $(this).children(":eq(4)").text();
+
+    $("#inputId").val(id);
+    $("#Ocode").val(code);
+    $("#inputdate").val(date);
+    $("#price").val(price);
+    $("#OQty").val(qty);
+
+});
+

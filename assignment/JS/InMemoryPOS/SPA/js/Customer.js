@@ -1,91 +1,18 @@
-// // document.getElementById("add").addEventListener("click",function(){
-// //     let id=document.getElementById("inputCId").value;
-// //     let name=document.getElementById("Cname").value;
-// //     let address=document.getElementById("inputAddress").value;
-// //     let date=document.getElementById("Cdate").value;
-// //     console.log(id,name,address,date);
-//
-//
-// var customerArray =[];
-//
-//
-// $("#add").click(function () {
-//     let id = $("#inputCId").val();
-//     let name = $("#Cname").val();
-//     let address = $("#inputAddress").val();
-//     let date=$("#Cdate").val();
-//
-//     console.log(id,name,address,date);
-//
-//      let cus = {
-//          id: this.id,
-//          name: this.name ,
-//          address:this.address,
-//          date:this.date,
-//      }
-//     customerArray.push(cus);
-//
-//     // let tBody=document.getElementById("tblCustomer");
-// let tBody = $("#tblCustomer")
-//
-//
-//     // let tr=document.createElement("tr");
-//     // let col1= document.createElement("td");
-//     // let col2=document.createElement("td");
-//     // let col3=document.createElement("td");
-//     // let col4=document.createElement("td");
-//
-//     let tr = $('<tr>');
-//     let td1 = $('<td>');
-//     let td2 = $('<td>');
-//     let td3 = $('<td>');
-//     let td4 = $('<td>');
-//
-//
-//
-//
-//
-//     // col1.textContent=id;
-//     // col2.textContent=name;
-//     // col3.textContent=address;
-//     // col4.textContent=date;
-//
-//
-//     // td1.text(id);
-//     // td2.text(name);
-//     // td3.text(address);
-//     // td4.text(date);
-//
-//     td1.text(cus[0]);
-//     td2.text(cus[1]);
-//     td3.text(cus[2]);
-//     td4.text(cus[3]);
-//
-//
-//
-//     // tr.appendChild(col1);
-//     // tr.appendChild(col2);
-//     // tr.appendChild(col3);
-//     // tr.appendChild(col4);
-//     //
-//     //
-//     // tBody.appendChild(tr);
-//     tr.append(td1);
-//     tr.append(td2);
-//     tr.append(td3);
-//     tr.append(td4);
-//
-//     tBody.append(tr);
-//
-//
-//
-//
-//
-// });
+const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
+const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
+const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
+const CUS_BIRTHDAY_REGEX = /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
+
+let vArray = new Array();
+vArray.push([$("#inputCId"), CUS_ID_REGEX]);
+vArray.push([$("#Cname"), CUS_NAME_REGEX]);
+vArray.push([$("#inputAddress"), CUS_ADDRESS_REGEX]);
+vArray.push([$("#Cdate"), CUS_BIRTHDAY_REGEX]);
+
+
 var customerDB = [];
 
-$("#add").click(function () {
-
+function addCustomer() {
 
     let customerID = $("#inputCId").val();
     let customerName = $("#Cname").val();
@@ -103,8 +30,14 @@ $("#add").click(function () {
 
     customerDB.push(customerOb);
 
- getAllCustomers();
+    getAllCustomers();
     searchCustomer();
+
+}
+
+$("#add").click(function () {
+
+addCustomer();
 });
 
 
@@ -127,6 +60,9 @@ function getAllCustomers() {
 
 
         $("#tblCustomer").append(row);
+
+
+        bindTrEvents();
     }
 }
 
@@ -137,20 +73,23 @@ getAllCustomers();
 
 });
 
+function bindTrEvents(){
+    $('#tblCustomer>tr').click(function () {
+        //get the selected rows data
+        let id = $(this).children().eq(0).text();
+        let name = $(this).children().eq(1).text();
+        let address = $(this).children().eq(2).text();
+        let date = $(this).children().eq(3).text();
 
-$("#tblCustomer").on('click', 'tr', function() {
+        //set the selected rows data to the input fields
+        $("#inputCId").val(id);
+        $("#Cname").val(name);
+        $("#inputAddress").val(address);
+        $("#Cdate").val(date);
+    })
 
-    let id = $(this).children(":eq(0)").text();
-    let name = $(this).children(":eq(1)").text();
-    let address = $(this).children(":eq(2)").text();
-    let date = $(this).children(":eq(3)").text();
+}
 
-    $("#inputCId").val(id);
-    $("#Cname").val(name);
-    $("#inputAddress").val(address);
-    $("#Cdate").val(date);
-
-});
 
 //delete
 
@@ -173,7 +112,7 @@ $("#delete").click(function () {
 
         if(response){
             alert("customer deleted")
-
+            getAllCustomers();
         }else {
             alert("customer not deleted")
         }
@@ -219,10 +158,156 @@ function searchCustomer(id){
     });
 }
 
+function clearCustomerInputFields() {
+    $("#inputCId,#Cname,#inputAddress,#Cdate").val("");
+    $("#inputCId").focus();
+}
+
+
+//disable tab
+$("#inputCId,#Cname,#inputAddress,#Cdate").keydown(function (e) {
+
+    if (e.key == "Tab") {
+        e.preventDefault();
+    }
+});
+
+
+$("#inputCId").keydown(function (e){
+
+    if (e.key=="Enter"){
+        $("#Cname").focus();
+    }
+
+});
+
+$("#Cname").keydown(function (e){
+    if (e.key=="Enter"){
+        $("#inputAddress").focus();
+    }
+});
+
+$("#inputAddress").keydown(function (e){
+    if (e.key=="Enter"){
+        $("#Cdate").focus();
+    }
+});
+
+$("#Cdate").keydown(function (e){
+    if (e.key=="Enter"){
+        addCustomer();
+        clearCustomerInputFields();
+    }
+});
 
 
 
 
 
+$("#inputCId").keyup(function (e) {
+    const pattern = /^(C00)[0-9]$/;
+    if (pattern.test($("#inputCId").val())){
+        $("#inputCId").css('border','2px solid green');
 
 
+    }else{
+        $("#inputCId").css('border','2px solid red')
+        if (e.key==='Enter'){
+            console.log(e);
+            e.preventDefault();
+
+        }
+
+    }
+
+});
+
+
+
+
+$("#Cname").keyup(function (e) {
+    const pattern = /^[a-zA-Z\s']+$/u;
+    if (pattern.test($("#Cname").val())){
+        $("#Cname").css('border','2px solid green');
+
+
+    }else{
+        $("#Cname").css('border','2px solid red')
+        if (e.key==='Enter'){
+            console.log(e);
+            e.preventDefault();
+
+        }
+
+    }
+
+});
+
+$("#inputAddress").keyup(function (e) {
+    const pattern =  /^[a-zA-Z\s']+$/u;
+    if (pattern.test($("#inputAddress").val())){
+        $("#inputAddress").css('border','2px solid green');
+
+
+    }else{
+        $("#inputAddress").css('border','2px solid red')
+        if (e.key==='Enter'){
+            console.log(e);
+            e.preventDefault();
+
+        }
+
+    }
+
+});
+
+$("#Cdate").keyup(function (e) {
+    const pattern =/^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
+    if (pattern.test($("#Cdate").val())){
+        $("#Cdate").css('border','2px solid green');
+
+
+    }else{
+        $("#Cdate").css('border','2px solid red')
+        if (e.key==='Enter'){
+            console.log(e);
+            e.preventDefault();
+
+        }
+
+    }
+
+});
+
+
+
+// function checkValidationsOfAll() {
+//     for (let i = 0; i < vArray.length; i++) {
+//         let field = vArray[i][0];
+//         let regEx = vArray[i][1];
+//         if (checkValidations(field, regEx)) {
+//             field.css("border", "2px solid green");
+//         } else {
+//             field.css("border", "2px solid red");
+//             return;
+//         }
+//     }
+// }
+//
+// function getTheFirstError() {
+//     for (let i = 0; i < vArray.length; i++) {
+//         let field = vArray[i][0];
+//         let regEx = vArray[i][1];
+//         if (checkValidations(field, regEx)) {
+//             return field;
+//         }
+//     }
+//     return true;
+// }
+//
+// function checkValidations(txt, regEx) {
+//     if (regEx.test(txt.val())) {
+//         return true;
+//     }
+//     return false;
+// }

@@ -1,15 +1,3 @@
-const CUS_ID_REGEX = /^(C00-)[0-9]{3}$/;
-const CUS_NAME_REGEX = /^[A-Za-z ]{5,}$/;
-const CUS_ADDRESS_REGEX = /^[A-Za-z0-9 ]{8,}$/;
-const CUS_BIRTHDAY_REGEX = /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
-
-let vArray = new Array();
-vArray.push([$("#inputCId"), CUS_ID_REGEX]);
-vArray.push([$("#Cname"), CUS_NAME_REGEX]);
-vArray.push([$("#inputAddress"), CUS_ADDRESS_REGEX]);
-vArray.push([$("#Cdate"), CUS_BIRTHDAY_REGEX]);
-
-
 var customerDB = [];
 
 function addCustomer() {
@@ -279,35 +267,3 @@ $("#Cdate").keyup(function (e) {
 
 });
 
-
-
-// function checkValidationsOfAll() {
-//     for (let i = 0; i < vArray.length; i++) {
-//         let field = vArray[i][0];
-//         let regEx = vArray[i][1];
-//         if (checkValidations(field, regEx)) {
-//             field.css("border", "2px solid green");
-//         } else {
-//             field.css("border", "2px solid red");
-//             return;
-//         }
-//     }
-// }
-//
-// function getTheFirstError() {
-//     for (let i = 0; i < vArray.length; i++) {
-//         let field = vArray[i][0];
-//         let regEx = vArray[i][1];
-//         if (checkValidations(field, regEx)) {
-//             return field;
-//         }
-//     }
-//     return true;
-// }
-//
-// function checkValidations(txt, regEx) {
-//     if (regEx.test(txt.val())) {
-//         return true;
-//     }
-//     return false;
-// }

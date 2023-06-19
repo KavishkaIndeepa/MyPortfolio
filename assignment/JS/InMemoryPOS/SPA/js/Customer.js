@@ -101,6 +101,7 @@ $("#delete").click(function () {
         if(response){
             alert("customer deleted")
             getAllCustomers();
+            clearCustomerInputFields();
         }else {
             alert("customer not deleted")
         }
@@ -114,6 +115,8 @@ $("#delete").click(function () {
 $("#update").click(function (){
     let id= $("#inputCId").val();
     updateCustomer(id);
+
+    clearCustomerInputFields();
 });
 
 

@@ -1,4 +1,4 @@
-var itemDB = [];
+// var itemDB = [];
 
 function addItems(){
     let itemCode = $("#IinputId").val();
@@ -18,6 +18,7 @@ function addItems(){
 
     getAllItems();
     searchItem();
+    loadAllItemCode();
 
 }
 $("#itemAdd").click(function () {

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../../../Css-Framework/css/posCss.css">
 
 
+
 </head>
 <body>
 <header>
@@ -291,8 +292,8 @@
                 <div class="col-md-6">
                     <label for="orderId" class="form-label">OrderId</label>
                     <select id="orderId" class="form-select">
-                        <option selected>O001</option>
-                        <option>...</option>
+                        <option selected></option>
+<!--                        <option>...</option>-->
                     </select>
                 </div>
                 <div class="col-md-6">
@@ -302,40 +303,44 @@
                 <div class="col-md-6">
                     <label for="CusId" class="form-label">CustomerId</label>
                     <select id="CusId" class="form-select">
-                        <option selected>C001</option>
-                        <option>...</option>
+                        <option selected></option>
+<!--                        <option>...</option>-->
                     </select>
                 </div>
                 <div class="col-md-6">
                     <label for="CusName" class="form-label">Customer Name</label>
                     <input type="text" class="form-control" id="CusName">
                 </div>
+
+
                 <div class="col-md-3">
                     <label for="code" class="form-label">Code</label>
                     <select id="code" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                        <option selected></option>
+<!--                        <option>...</option>-->
                     </select>
                 </div>
                 <div class="col-md-3">
                     <label for="dec" class="form-label">Description</label>
                     <input type="text" class="form-control" id="dec">
                 </div>
-                <div class="col-md-3">
-                    <label for="qtyhl" class="form-label">Unit price</label>
-                    <input type="number" class="form-control" id="qtyhl">
+                <div class="col-md-2">
+                    <label for="UnitPrice" class="form-label">Unit price</label>
+                    <input type="number" class="form-control" id="UnitPrice">
                 </div>
                 <div class="col-md-2">
-                    <label for="qtyh" class="form-label">Qty. On Hand</label>
-                    <input type="number" class="form-control" id="qtyh">
+                    <label for="ODQty" class="form-label">Qty. On Hand</label>
+                    <input type="number" class="form-control" id="ODQty">
                 </div>
-                <div class="col-md-1">
+
+
+                <div class="col-md-2">
                     <label for="qty" class="form-label">Qty</label>
                     <input type="number" class="form-control" id="qty">
                 </div>
 
                 <div class="col-12">
-                    <button style="color: white" type="submit" class="btn btn-primary">Add to cart</button>
+                    <button id="btnAddToCart" style="color: white" type="submit" class="btn btn-primary">Add to cart</button>
                 </div>
             </form>
         </section>
@@ -410,52 +415,8 @@
             <th scope="col">QTY</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-            <th scope="row">0001</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">0002</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tbody id="placeOrder">
 
-        </tr>
-        <tr>
-            <th scope="row">0003</th>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <th scope="row">0004</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
-        <tr>
-            <th scope="row">0005</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-
-        </tr>
         </tbody>
     </table>
 
@@ -463,14 +424,6 @@
 
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
-
-    // document.addEventListener("DOMContentLoaded", function () {
-    //     document.getElementById("MainImage").style.display = 'inline-block';
-    //     document.getElementById("customer").style.display = 'none';
-    //     document.getElementById("Item").style.display = 'none';
-    //     document.getElementById("order").style.display = 'none';
-    //     document.getElementById("OrderDetail").style.display = 'none';
-    // });
 
     $("DOMContentLoaded", function () {
         $("#MainImage").css("display", 'inline-block');
@@ -481,14 +434,6 @@
     });
 
 
-    // document.getElementById("homeForm").addEventListener('click', function () {
-    //     document.getElementById("MainImage").style.display = 'inline-block';
-    //     document.getElementById("customer").style.display = 'none';
-    //     document.getElementById("Item").style.display = 'none';
-    //     document.getElementById("order").style.display = 'none';
-    //     document.getElementById("OrderDetail").style.display = 'none';
-    // });
-
     $("#homeForm").click( function () {
         $("#MainImage").css("display", 'inline-block');
         $("#customer").css("display", 'none');
@@ -497,16 +442,6 @@
         $("#OrderDetail").css("display", 'none');
     });
 
-
-
-    // document.getElementById("customerForm").addEventListener('click', function () {
-    //     document.getElementById("MainImage").style.display = 'none';
-    //     document.getElementById("customer").style.display = 'inline-block';
-    //     document.getElementById("Item").style.display = 'none';
-    //     document.getElementById("order").style.display = 'none';
-    //     document.getElementById("OrderDetail").style.display = 'none';
-    // });
-
     $("#customerForm").click( function () {
         $("#MainImage").css("display", 'none');
         $("#customer").css("display", 'inline-block');
@@ -514,14 +449,6 @@
         $("#order").css("display", 'none');
         $("#OrderDetail").css("display", 'none');
     });
-
-    // document.getElementById("itemForm").addEventListener('click', function () {
-    //     document.getElementById("MainImage").style.display = 'none';
-    //     document.getElementById("customer").style.display = 'none';
-    //     document.getElementById("Item").style.display = 'inline-block';
-    //     document.getElementById("order").style.display = 'none';
-    //     document.getElementById("OrderDetail").style.display = 'none';
-    // });
 
     $("#itemForm").click( function () {
         $("#MainImage").css("display", 'none');
@@ -532,14 +459,6 @@
     });
 
 
-    // document.getElementById("orderForm").addEventListener('click', function () {
-    //     document.getElementById("MainImage").style.display = 'none';
-    //     document.getElementById("customer").style.display = 'none';
-    //     document.getElementById("Item").style.display = 'none';
-    //     document.getElementById("order").style.display = 'inline-block';
-    //     document.getElementById("OrderDetail").style.display = 'none';
-    // });
-
     $("#orderForm").click( function () {
         $("#MainImage").css("display", 'none');
         $("#customer").css("display", 'none');
@@ -548,14 +467,6 @@
         $("#OrderDetail").css("display", 'none');
     });
 
-    //
-    // document.getElementById("orderDetailForm").addEventListener('click', function () {
-    //     document.getElementById("MainImage").style.display = 'none';
-    //     document.getElementById("customer").style.display = 'none';
-    //     document.getElementById("Item").style.display = 'none';
-    //     document.getElementById("order").style.display = 'none';
-    //     document.getElementById("OrderDetail").style.display = 'inline-block';
-    // });
     $("#orderDetailForm").click( function () {
         $("#MainImage").css("display", 'none');
         $("#customer").css("display", 'none');
@@ -569,9 +480,15 @@
 
 </script>
 <script src="../../../../assets/css/js/bootstrap.bundle.js"></script>
-<script src="js/Order.js"></script>
-<script src="js/Item.js"></script>
-<script src="js/Customer.js"></script>
+<script src="db/db.js"></script>
+<script src="controller/Order.js"></script>
+<script src="controller/Item.js"></script>
+<script src="controller/Customer.js"></script>
+<script src="controller/orderDetail.js"></script>
+<script src="model/cartModel.js"></script>
+<script src="model/customerModel.js"></script>
+<script src="model/itemModel.js"></script>
+<script src="model/orderModel.js"></script>
 
 </body>
 </html>

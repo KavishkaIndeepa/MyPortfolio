@@ -1,4 +1,4 @@
-var customerDB = [];
+// var customerDB = [];
 
 function addCustomer() {
 
@@ -20,6 +20,8 @@ function addCustomer() {
 
     getAllCustomers();
     searchCustomer();
+    clearCustomerInputFields();
+    loadAllCustomerId();
 
 }
 

@@ -1,4 +1,4 @@
-var orderDB = [];
+// var orderDB = [];
 
 function addOrder(){
     let OrderId = $("#inputId").val();

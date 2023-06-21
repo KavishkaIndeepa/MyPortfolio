@@ -6,10 +6,15 @@
     <meta content="width=device-width initial-scale=1" name="viewport">
 
     <style>
-        section {
-            height: 100vh;
-            width: auto;
+        /*section {*/
+        /*    height: 100vh;*/
+        /*    width: auto;*/
+        /*}*/
+
+        #Invoice{
+            height: 68vh;
         }
+
 
         /*.main {*/
         /*    background-image: url("assest/hangers.jpg");*/
@@ -52,9 +57,9 @@
                     <li class="nav-item">
                         <a class="nav-link " href="#order" id="orderForm">Orders</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#OrderDetail" id="orderDetailForm">Order-Details</a>
-                    </li>
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link " href="#OrderDetail" id="orderDetailForm">Order-Details</a>-->
+<!--                    </li>-->
 
                 </ul>
                 <form class="d-flex" role="search">
@@ -215,86 +220,82 @@
 
 <section id="order">
 
-    <div class="row">
-        <h1 style="position: absolute;
-    left: 5vw;
-    color: blue;">Order Form</h1>
-        <div class="col" style="padding-left: 0px;
-    padding-right: 0px;
-    margin-top: 42px;
-    margin-left: 62px;">
-            <form class="row g-3">
+<!--    <div class="row">-->
+<!--        <h1 style="position: absolute;-->
+<!--    left: 5vw;-->
+<!--    color: blue;">Order Form</h1>-->
+<!--        <div class="col" style="padding-left: 0px;-->
+<!--    padding-right: 0px;-->
+<!--    margin-top: 42px;-->
+<!--    margin-left: 62px;">-->
+<!--            <form class="row g-3">-->
 
-                <div class="col-md-7">
-                    <label for="inputId" class="form-label">Order ID</label>
-                    <input type="text" class="form-control" id="inputId">
-                </div>
-                <div class="col-md-7">
-                    <label for="Ocode" class="form-label">Item Code</label>
-                    <input type="text" class="form-control" id="Ocode">
-                </div>
-                <div class="col-7">
-                    <label for="inputdate" class="form-label">Date</label>
-                    <input type="date" class="form-control" id="inputdate">
-                </div>
-                <div class="col-md-7">
-                    <label for="price" class="form-label">Price</label>
-                    <input type="text" class="form-control" id="price">
-                </div>
-                <div class="col-md-7">
-                    <label for="OQty" class="form-label">QTY</label>
-                    <input type="text" class="form-control" id="OQty">
-                </div>
-            </form>
-            <div class="button" style="position: absolute;
-    top: 72vh;">
-                <button id="orderAdd" type="button" class="btn btn-primary">Add</button>
-                <button id="orderDelete" style="background-color: red" type="button" class="btn btn-secondary">Delete</button>
-                <button id="orderUpdate" type="button" class="btn btn-success">Update</button>
-                <button id="getAllOrder" style="background-color: yellow" type="button" class="btn btn-success">Get All</button>
-            </div>
-        </div>
-        <div class="col">
-            <!--      <table class="mt-4 table table-hover table-borderless table-striped text-center w-100  rounded-3">-->
-            <table class="table table-dark table-striped-columns" style="    position: absolute;
-    top: 32vh;">
-                <thead class="bg-primary">
-                <tr>
-                    <th scope="col">O_ID</th>
-                    <th scope="col">I_Code</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Qty</th>
-                </tr>
-                </thead>
-                <tbody id="tblOrder">
+<!--                <div class="col-md-7">-->
+<!--                    <label for="inputId" class="form-label">Order ID</label>-->
+<!--                    <input type="text" class="form-control" id="inputId">-->
+<!--                </div>-->
+<!--                <div class="col-md-7">-->
+<!--                    <label for="Ocode" class="form-label">Item Code</label>-->
+<!--                    <input type="text" class="form-control" id="Ocode">-->
+<!--                </div>-->
+<!--                <div class="col-7">-->
+<!--                    <label for="inputdate" class="form-label">Date</label>-->
+<!--                    <input type="date" class="form-control" id="inputdate">-->
+<!--                </div>-->
+<!--                <div class="col-md-7">-->
+<!--                    <label for="price" class="form-label">Price</label>-->
+<!--                    <input type="text" class="form-control" id="price">-->
+<!--                </div>-->
+<!--                <div class="col-md-7">-->
+<!--                    <label for="OQty" class="form-label">QTY</label>-->
+<!--                    <input type="text" class="form-control" id="OQty">-->
+<!--                </div>-->
+<!--            </form>-->
+<!--            <div class="button" style="position: absolute;-->
+<!--    top: 72vh;">-->
+<!--                <button id="orderAdd" type="button" class="btn btn-primary">Add</button>-->
+<!--                <button id="orderDelete" style="background-color: red" type="button" class="btn btn-secondary">Delete</button>-->
+<!--                <button id="orderUpdate" type="button" class="btn btn-success">Update</button>-->
+<!--                <button id="getAllOrder" style="background-color: yellow" type="button" class="btn btn-success">Get All</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            &lt;!&ndash;      <table class="mt-4 table table-hover table-borderless table-striped text-center w-100  rounded-3">&ndash;&gt;-->
+<!--            <table class="table table-dark table-striped-columns" style="    position: absolute;-->
+<!--    top: 32vh;">-->
+<!--                <thead class="bg-primary">-->
+<!--                <tr>-->
+<!--                    <th scope="col">O_ID</th>-->
+<!--                    <th scope="col">I_Code</th>-->
+<!--                    <th scope="col">Date</th>-->
+<!--                    <th scope="col">Price</th>-->
+<!--                    <th scope="col">Qty</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody id="tblOrder">-->
 
-                </tbody>
-            </table>
+<!--                </tbody>-->
+<!--            </table>-->
 
-            <input class="form-control me-2" type="search" placeholder="Input Name/ID" aria-label="Search" style="position: absolute;
-    width: 20%; top: 20vh;">
+<!--            <input class="form-control me-2" type="search" placeholder="Input Name/ID" aria-label="Search" style="position: absolute;-->
+<!--    width: 20%; top: 20vh;">-->
 
-        </div>
-    </div>
-
-</section>
-
-
-<section id="OrderDetail">
-
-    <section class="row me-3">
+<!--        </div>-->
+<!--    </div>-->
+    <section id="Invoice" class="row me-3">
         <p class="fs-2 text-center fw-semibold">Place Order Form</p>
         <section class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow
      p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m" style="background-color: #0a0a0a !important;">
             <h2 style="color: white">Invoice Details</h2>
             <form style="color: white" class="row g-3">
                 <div class="col-md-6">
-                    <label for="orderId" class="form-label">OrderId</label>
-                    <select id="orderId" class="form-select">
-                        <option selected></option>
-<!--                        <option>...</option>-->
-                    </select>
+<!--                    <label for="orderId" class="form-label">OrderId</label>-->
+<!--                    <select id="orderId" class="form-select">-->
+<!--                        <option selected></option>-->
+<!--                        &lt;!&ndash;                        <option>...</option>&ndash;&gt;-->
+<!--                    </select>-->
+                    <label for="CusName" class="form-label">OrderId</label>
+                    <input type="text" class="form-control" id="orderId" disabled>
                 </div>
                 <div class="col-md-6">
                     <label for="date" class="form-label">Oder Date</label>
@@ -302,14 +303,14 @@
                 </div>
                 <div class="col-md-6">
                     <label for="CusId" class="form-label">CustomerId</label>
-                    <select id="CusId" class="form-select">
+                    <select id="CusId" class="form-select" >
                         <option selected></option>
-<!--                        <option>...</option>-->
+                        <!--                        <option>...</option>-->
                     </select>
                 </div>
                 <div class="col-md-6">
                     <label for="CusName" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="CusName">
+                    <input type="text" class="form-control" id="CusName" disabled>
                 </div>
 
 
@@ -317,20 +318,20 @@
                     <label for="code" class="form-label">Code</label>
                     <select id="code" class="form-select">
                         <option selected></option>
-<!--                        <option>...</option>-->
+                        <!--                        <option>...</option>-->
                     </select>
                 </div>
                 <div class="col-md-3">
                     <label for="dec" class="form-label">Description</label>
-                    <input type="text" class="form-control" id="dec">
+                    <input type="text" class="form-control" id="dec" disabled>
                 </div>
                 <div class="col-md-2">
                     <label for="UnitPrice" class="form-label">Unit price</label>
-                    <input type="number" class="form-control" id="UnitPrice">
+                    <input type="number" class="form-control" id="UnitPrice" disabled>
                 </div>
                 <div class="col-md-2">
                     <label for="ODQty" class="form-label">Qty. On Hand</label>
-                    <input type="number" class="form-control" id="ODQty">
+                    <input type="number" class="form-control" id="ODQty" disabled>
                 </div>
 
 
@@ -382,13 +383,22 @@
                     </div>
 
                 </div>
+                <div class="row gx-3 mt-4">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="cash" class="form-label">Discount</label>
+                            <input type="text" class="form-control" id="discount" placeholder="0000.00">
+                        </div>
+                    </div>
+
+                </div>
                 <div class="row">
                     <div class="mb-3 mb-xl-5 mb-xxl-4">
                         <label for="balance" class="form-label">Balance</label>
                         <input type="text" class="form-control" id="balance" placeholder="0000.00">
                     </div>
                     <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
-                        <button style="background-color: #423ade; color: white" type="button" class="btn btn-success">
+                        <button id="purchaseOrder" style="background-color: #423ade; color: white" type="button" class="btn btn-success">
                             Purchase
                         </button>
                     </div>
@@ -401,24 +411,32 @@
 
     </section>
 
-    <table class="table table-dark table-striped-columns" style="    width: 97vw;
-    top: 129vh;
+    <table class="table table-dark table-striped-columns" style="
+    width: 97vw;
+    top: 85vh;
     position: absolute;
     left: 1vw;">
         <thead class="bg-primary">
         <tr>
-            <th scope="col">Order Id</th>
-            <th scope="col">Cus ID</th>
             <th scope="col">Item Code</th>
-            <th scope="col">Description</th>
-            <th scope="col">Unit Price</th>
-            <th scope="col">QTY</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total</th>
+
         </tr>
         </thead>
         <tbody id="placeOrder">
 
         </tbody>
     </table>
+
+</section>
+
+
+<section id="OrderDetail">
+
+
 
 </section>
 
@@ -473,6 +491,8 @@
         $("#Item").css("display", 'none');
         $("#order").css("display", 'none');
         $("#OrderDetail").css("display", 'inline-block');
+
+
     });
 
 

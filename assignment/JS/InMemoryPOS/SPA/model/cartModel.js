@@ -1,11 +1,10 @@
-function tempCartModal(orderId,customerId,itemCode,description,price,qty) {
+function tempCartModal(itemCode,description,price,qty,total) {
     var tempOrder={
-        orderId:orderId,
-        customerId:customerId,
         itemCode:itemCode,
         description:description,
         price:price,
-        qty:qty
+        qty:qty,
+        total:total
     }
     tempOrderCartAr.push(tempOrder);
 }

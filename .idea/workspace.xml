@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/validation/customerValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/validation/itemValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Customer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/orderDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/orderDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/model/cartModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/model/cartModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/model/itemModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/model/itemModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +175,9 @@
       <workItem from="1687171546002" duration="6053000" />
       <workItem from="1687247155739" duration="11015000" />
       <workItem from="1687326866631" duration="20961000" />
-      <workItem from="1687411647845" duration="14232000" />
+      <workItem from="1687411647845" duration="18899000" />
+      <workItem from="1687460617326" duration="16000" />
+      <workItem from="1687460767509" duration="1036000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

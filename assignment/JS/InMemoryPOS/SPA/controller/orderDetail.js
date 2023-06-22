@@ -21,16 +21,15 @@ $("#CusId").on('change',function (){
 function loadAllItemCode(){
     $("#code").empty();
     for (let itemArElement of itemDB){
-        $("#code").append(`<option>${itemArElement.code}</option>`);
+        $("#code").append(`<option>${itemArElement.itemCode}</option>`);
     }
 }
 
 $("#code").on('change',function (){
 
     let item=searchItem($('#code').val());
-
-    $("#dec").val(item.name);
-    $("#UnitPrice").val(item.price);
+    $("#dec").val(item.ItemName);
+    $("#UnitPrice").val(item.unitPrice);
     $("#ODQty").val(item.qty);
 
 });
@@ -38,6 +37,7 @@ $("#code").on('change',function (){
 
 $('#btnAddToCart').click(function (){
 
+    let orderId=$('#orderId').val();
     let itemCode=$('#code').val();
     let itmName = $('#dec').val();
     let itmPrice = $('#UnitPrice').val();
@@ -57,13 +57,13 @@ $('#btnAddToCart').click(function (){
         // loadCartTableDetail();
 
     }else{
-        tempCartModal(itemCode,itmName,itmPrice,itemOrderQty,total)
+        tempCartModal(orderId,itemCode,itmName,itmPrice,itemOrderQty,total)
         addCartData();
     }
 
     minQty(itemCode,itemOrderQty);
-    generateOrderId();
-
+    // generateOrderId();
+// $("#orderId").val(generateOrderId());
 
     /*------------Place holder table add-------------*/
 
@@ -73,7 +73,7 @@ function addCartData() {
     $("#placeOrder> tr").detach();
 
     for (var tc of tempOrderCartAr){
-        var row="<tr><td>"+tc.itemCode+"</td><td>"+tc.description+"</td><td>"+tc.price+"</td><td>"+tc.qty+"</td><td>"+tc.total+"</td></tr>";
+        var row="<tr><td>"+tc.oId+"</td><td>"+tc.itemCode+"</td><td>"+tc.description+"</td><td>"+tc.price+"</td><td>"+tc.qty+"</td><td>"+tc.total+"</td></tr>";
         $('#placeOrder').append(row);
     }
     bindTrEvents();
@@ -142,7 +142,7 @@ $('#cash').on('keyup',function (){
 })
 
 $('#purchaseOrder').click(function (){
-    $("#orderId").val( generateOrderId());
+    // $("#orderId").val( generateOrderId());
 
     alert("Order is Purchased")
     for (var tempOrder of tempOrderCartAr){

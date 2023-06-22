@@ -1,5 +1,10 @@
 // var customerDB = [];
 
+// generateCusId();
+//
+// let cusId = generateCustomerID();
+// $("#inputCId").val(cusId);
+
 function addCustomer() {
 
     let customerID = $("#inputCId").val();
@@ -8,15 +13,21 @@ function addCustomer() {
     let customerBDay = $("#Cdate").val();
 
 
-    let customerOb = {
-        id: customerID,
-        name: customerName,
-        address: customerAddress,
-        date: customerBDay
-    }
+    // let customerOb = {
+    //     id: customerID,
+    //     name: customerName,
+    //     address: customerAddress,
+    //     date: customerBDay
+    // }
+
+    let newCustomer= Object.assign({},customerObject);
+    newCustomer.id=customerID;
+    newCustomer.name=customerName;
+    newCustomer.address=customerAddress;
+    newCustomer.Birthday=customerBDay;
 
 
-    customerDB.push(customerOb);
+    customerDB.push(newCustomer);
 
     getAllCustomers();
     searchCustomer();
@@ -28,6 +39,8 @@ function addCustomer() {
 $("#add").click(function () {
 
 addCustomer();
+generateCustomerId();
+
 });
 
 
@@ -39,7 +52,7 @@ function getAllCustomers() {
         let id = customerDB[i].id;
         let name = customerDB[i].name;
         let address = customerDB[i].address;
-        let date = customerDB[i].date;
+        let date = customerDB[i].Birthday;
 
         let row = `<tr>
                      <td>${id}</td>
@@ -153,7 +166,7 @@ function searchCustomer(id){
 
 function clearCustomerInputFields() {
     $("#inputCId,#Cname,#inputAddress,#Cdate").val("");
-    $("#inputCId").focus();
+    $("#Cname").focus();
 }
 
 
@@ -190,6 +203,7 @@ $("#Cdate").keydown(function (e){
     if (e.key=="Enter"){
         addCustomer();
         clearCustomerInputFields();
+        generateCustomerId();
     }
 });
 
@@ -197,78 +211,121 @@ $("#Cdate").keydown(function (e){
 
 
 
-$("#inputCId").keyup(function (e) {
-    const pattern = /^(C00)[0-9]$/;
-    if (pattern.test($("#inputCId").val())){
-        $("#inputCId").css('border','2px solid green');
+// $("#inputCId").keyup(function (e) {
+//     const pattern = /^(C00)[0-9]$/;
+//     if (pattern.test($("#inputCId").val())){
+//         $("#inputCId").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#inputCId").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
+//
+//
+//
+//
+// $("#Cname").keyup(function (e) {
+//     const pattern = /^[a-zA-Z\s']+$/u;
+//     if (pattern.test($("#Cname").val())){
+//         $("#Cname").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#Cname").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
+//
+// $("#inputAddress").keyup(function (e) {
+//     const pattern =  /^[a-zA-Z\s']+$/u;
+//     if (pattern.test($("#inputAddress").val())){
+//         $("#inputAddress").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#inputAddress").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
+//
+// $("#Cdate").keyup(function (e) {
+//     const pattern =/^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
+//     if (pattern.test($("#Cdate").val())){
+//         $("#Cdate").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#Cdate").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
 
 
-    }else{
-        $("#inputCId").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
+// function generateCustomerID() {
+//     let existingCusIds = []; // Replace with your actual existing order IDs
+//
+//     let maxId = existingCusIds.reduce(function (max, CusId) {
+//         let CusIdNumber = parseInt(CusId.split('-')[1]);
+//         return CusIdNumber > max ? CusIdNumber : max;
+//     }, 0);
+//
+//     let nextIdNumber = maxId + 1;
+//     let nextId = 'C' + nextIdNumber.toString().padStart(3, '0');
+//
+//     return nextId;
+// }
+// function generateCustomerID() {
+//     if (customerDB.length > 0) {
+//         let lastId = customerDB[customerDB.length - 1].id;
+//         let digit = lastId.substring(6);
+//         let number = parseInt(digit) + 1;
+//         return lastId.replace(digit, number);
+//     } else {
+//         return "C001";
+//     }
+// }
+function generateCustomerId() {
 
+    if (customerDB.length == 0) {
+        $("#inputCId").val("C00-0001");
+    } else if (customerDB.length > 0) {
+        var id = customerDB[customerDB.length - 1].id.split("-")[1];
+        var tempId = parseInt(id);
+        tempId = tempId + 1;
+        if (tempId <= 9) {
+            $("#inputCId").val("C00-000" + tempId);
+        } else if (tempId <= 99) {
+            $("#inputCId").val("C00-00" + tempId);
+        } else if (tempId <= 999) {
+            $("#inputCId").val("C00-0" + tempId);
+        } else if (tempId <= 9999) {
+            $("#inputCId").val("C00-" + tempId);
         }
-
     }
-
-});
-
-
-
-
-$("#Cname").keyup(function (e) {
-    const pattern = /^[a-zA-Z\s']+$/u;
-    if (pattern.test($("#Cname").val())){
-        $("#Cname").css('border','2px solid green');
-
-
-    }else{
-        $("#Cname").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
-        }
-
-    }
-
-});
-
-$("#inputAddress").keyup(function (e) {
-    const pattern =  /^[a-zA-Z\s']+$/u;
-    if (pattern.test($("#inputAddress").val())){
-        $("#inputAddress").css('border','2px solid green');
-
-
-    }else{
-        $("#inputAddress").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
-        }
-
-    }
-
-});
-
-$("#Cdate").keyup(function (e) {
-    const pattern =/^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
-    if (pattern.test($("#Cdate").val())){
-        $("#Cdate").css('border','2px solid green');
-
-
-    }else{
-        $("#Cdate").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
-        }
-
-    }
-
-});
-
+};

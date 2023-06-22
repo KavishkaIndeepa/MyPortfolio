@@ -7,14 +7,20 @@ function addItems(){
     let itemQty=$("#Iqty").val();
 
 
-    let itemOb = {
-        code: itemCode,
-        name: ItemName,
-        price: itemPrice,
-        qty: itemQty
-    }
+    // let itemOb = {
+    //     code: itemCode,
+    //     name: ItemName,
+    //     price: itemPrice,
+    //     qty: itemQty
+    // }
 
-    itemDB.push(itemOb);
+    let newItems=Object.assign({},itemObject);
+    newItems.itemCode=itemCode;
+    newItems.ItemName=ItemName;
+    newItems.unitPrice=itemPrice;
+    newItems.qty=itemQty;
+
+    itemDB.push(newItems);
 
     getAllItems();
     searchItem();
@@ -23,6 +29,7 @@ function addItems(){
 }
 $("#itemAdd").click(function () {
     addItems();
+    generateItemID();
 });
 
 
@@ -31,9 +38,9 @@ function getAllItems(){
 
 
     for (let i = 0; i < itemDB.length; i++) {
-        let code = itemDB[i].code;
-        let name = itemDB[i].name;
-        let price = itemDB[i].price;
+        let code = itemDB[i].itemCode;
+        let name = itemDB[i].ItemName;
+        let price = itemDB[i].unitPrice;
         let qty = itemDB[i].qty;
 
         let row = `<tr>
@@ -76,7 +83,7 @@ function bindItemTrEvent() {
 
 function deleteItem(id){
     for (let i = 0; i < itemDB.length; i++) {
-        if(itemDB[i].code==id){
+        if(itemDB[i].itemCode==id){
             itemDB.splice(i,1);
             return true;
         }
@@ -125,8 +132,8 @@ function updateItems(id){
             let price = $("#Iprice").val();
             let qty = $("#Iqty").val();
 
-            item.name=name;
-            item.price=price;
+            item.ItemName=name;
+            item.unitPrice=price;
             item.qty=qty;
 
             getAllItems();
@@ -137,13 +144,13 @@ function updateItems(id){
 
 function searchItem(id){
     return itemDB.find(function (item){
-        return item.code==id;
+        return item.itemCode==id;
     });
 }
 
 function clearItemInputFields() {
     $("#IinputId,#name,#Iprice,#Iqty").val("");
-    $("#IinputId").focus();
+    $("#name").focus();
 }
 
 $("#IinputId,#name,#Iprice,#Iqty").keydown(function (e) {
@@ -177,81 +184,101 @@ $("#Iqty").keydown(function (e){
     if (e.key=="Enter"){
         addItems();
         clearItemInputFields();
+        generateItemID();
     }
 });
 
 
-$("#IinputId").keyup(function (e) {
-    const pattern = /^(I00)[0-9]$/;
-    if (pattern.test($("#IinputId").val())){
-        $("#IinputId").css('border','2px solid green');
+// $("#IinputId").keyup(function (e) {
+//     const pattern = /^(I00)[0-9]$/;
+//     if (pattern.test($("#IinputId").val())){
+//         $("#IinputId").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#IinputId").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
+//
+//
+// $("#name").keyup(function (e) {
+//     const pattern = /^[a-zA-Z\s']+$/u;
+//     if (pattern.test($("#name").val())){
+//         $("#name").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#name").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
+//
+//
+//
+// $("#Iprice").keyup(function (e) {
+//     const pattern = /^[0-9]{2,}([.]{1}[0-9]{2})?$/;
+//     if (pattern.test($("#Iprice").val())){
+//         $("#Iprice").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#Iprice").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
+//
+// $("#Iqty").keyup(function (e) {
+//     const pattern = /^[0-9]{1,}?$/;
+//     if (pattern.test($("#Iqty").val())){
+//         $("#Iqty").css('border','2px solid green');
+//
+//
+//     }else{
+//         $("#Iqty").css('border','2px solid red')
+//         if (e.key==='Enter'){
+//             console.log(e);
+//             e.preventDefault();
+//
+//         }
+//
+//     }
+//
+// });
 
-
-    }else{
-        $("#IinputId").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
+function generateItemID() {
+    if (itemDB.length == 0) {
+        $("#IinputId").val("I00-0001");
+    } else if (itemDB.length > 0) {
+        var id = itemDB[itemDB.length - 1].itemCode.split("-")[1];
+        var tempId = parseInt(id);
+        tempId = tempId + 1;
+        if (tempId <= 9) {
+            $("#IinputId").val("I00-000" + tempId);
+        } else if (tempId <= 99) {
+            $("#IinputId").val("I00-00" + tempId);
+        } else if (tempId <= 999) {
+            $("#IinputId").val("I00-0" + tempId);
+        } else if (tempId <= 9999) {
+            $("#IinputId").val("I00-" + tempId);
         }
-
     }
-
-});
-
-
-$("#name").keyup(function (e) {
-    const pattern = /^[a-zA-Z\s']+$/u;
-    if (pattern.test($("#name").val())){
-        $("#name").css('border','2px solid green');
-
-
-    }else{
-        $("#name").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
-        }
-
-    }
-
-});
-
-
-
-$("#Iprice").keyup(function (e) {
-    const pattern = /^[0-9]{2,}([.]{1}[0-9]{2})?$/;
-    if (pattern.test($("#Iprice").val())){
-        $("#Iprice").css('border','2px solid green');
-
-
-    }else{
-        $("#Iprice").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
-        }
-
-    }
-
-});
-
-$("#Iqty").keyup(function (e) {
-    const pattern = /^[0-9]{1,}?$/;
-    if (pattern.test($("#Iqty").val())){
-        $("#Iqty").css('border','2px solid green');
-
-
-    }else{
-        $("#Iqty").css('border','2px solid red')
-        if (e.key==='Enter'){
-            console.log(e);
-            e.preventDefault();
-
-        }
-
-    }
-
-});
+};

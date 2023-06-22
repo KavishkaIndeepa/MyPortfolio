@@ -99,7 +99,7 @@
 
                 <div class="col-md-7">
                     <label for="inputCId" class="form-label">Customer ID</label>
-                    <input type="text" class="form-control" id="inputCId">
+                    <input type="text" class="form-control" id="inputCId" disabled>
                 </div>
                 <div class="col-md-7">
                     <label for="Cname" class="form-label">Customer Name</label>
@@ -166,7 +166,7 @@
 
                 <div class="col-md-7">
                     <label for="IinputId" class="form-label">Item Code</label>
-                    <input type="text" class="form-control" id="IinputId">
+                    <input type="text" class="form-control" id="IinputId" disabled>
                 </div>
                 <div class="col-md-7">
                     <label for="name" class="form-label">Item Name</label>
@@ -418,6 +418,7 @@
     left: 1vw;">
         <thead class="bg-primary">
         <tr>
+            <th scope="col">Order Id</th>
             <th scope="col">Item Code</th>
             <th scope="col">Item Name</th>
             <th scope="col">Price</th>
@@ -466,6 +467,9 @@
         $("#Item").css("display", 'none');
         $("#order").css("display", 'none');
         $("#OrderDetail").css("display", 'none');
+        // $("#inputCId").val(generateCustomerId());
+        $("#Cname").focus();
+        generateCustomerId();
     });
 
     $("#itemForm").click( function () {
@@ -474,6 +478,8 @@
         $("#Item").css("display", 'inline-block');
         $("#order").css("display", 'none');
         $("#OrderDetail").css("display", 'none');
+        $("#IinputId").val(generateItemID());
+        generateItemID();
     });
 
 
@@ -483,6 +489,8 @@
         $("#Item").css("display", 'none');
         $("#order").css("display", 'inline-block');
         $("#OrderDetail").css("display", 'none');
+        // $("#orderId").val( generateOrderId());
+
     });
 
     $("#orderDetailForm").click( function () {
@@ -509,6 +517,8 @@
 <script src="model/customerModel.js"></script>
 <script src="model/itemModel.js"></script>
 <script src="model/orderModel.js"></script>
+<script src="controller/validation/customerValidation.js"></script>
+<script src="controller/validation/itemValidation.js"></script>
 
 </body>
 </html>

@@ -1021,6 +1021,7 @@ h1>span{
 #loader {
     transition: opacity 1s;
     position: fixed;
+    z-index: 5;
     top: 0;
     left: 0;
     bottom: 0;

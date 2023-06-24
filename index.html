@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/Style.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/MediaNew.css">
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
 
 
 </head>
@@ -408,8 +409,24 @@
 <!--    <footer id="copyRight">-->
 
 
-<!--    </footer>-->
+<!--    Loader-->
+<!--    <iframe src="index.html" width="100%" height="500px" frameborder="0"></iframe>-->
 
+    <div id="loader">
+        <div></div>
+    </div>
+
+
+<!--    <script src="assets/js/jquery-3.7.0.min.js"></script>-->
+<!--    <script src="assets/js/script.js"></script>-->
+
+    <script>
+        let loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            console.log("This message will print just after fully loading the website")
+            loader.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>

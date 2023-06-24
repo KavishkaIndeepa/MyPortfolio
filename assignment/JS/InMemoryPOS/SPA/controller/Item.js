@@ -1,10 +1,12 @@
 // var itemDB = [];
 
-function addItems(){
+function addItems() {
     let itemCode = $("#IinputId").val();
+    if (searchItem(itemCode.trim()) == undefined) {
+
     let ItemName = $("#name").val();
     let itemPrice = $("#Iprice").val();
-    let itemQty=$("#Iqty").val();
+    let itemQty = $("#Iqty").val();
 
 
     // let itemOb = {
@@ -14,17 +16,22 @@ function addItems(){
     //     qty: itemQty
     // }
 
-    let newItems=Object.assign({},itemObject);
-    newItems.itemCode=itemCode;
-    newItems.ItemName=ItemName;
-    newItems.unitPrice=itemPrice;
-    newItems.qty=itemQty;
+    let newItems = Object.assign({}, itemObject);
+    newItems.itemCode = itemCode;
+    newItems.ItemName = ItemName;
+    newItems.unitPrice = itemPrice;
+    newItems.qty = itemQty;
 
     itemDB.push(newItems);
 
     getAllItems();
     searchItem();
     loadAllItemCode();
+
+    }else {
+    alert("Item already exits.!");
+    clearItemInputFields();
+    }
 
 }
 $("#itemAdd").click(function () {
@@ -102,6 +109,7 @@ $("#itemDelete").click(function () {
             alert("item deleted")
             getAllItems();
             clearItemInputFields();
+            generateItemID();
         }else {
             alert("item not deleted")
         }
@@ -116,6 +124,7 @@ $("#updateItem").click(function (){
     updateItems(id);
 
     clearItemInputFields();
+    generateItemID();
 });
 
 

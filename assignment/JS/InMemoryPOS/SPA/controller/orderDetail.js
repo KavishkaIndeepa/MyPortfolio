@@ -76,7 +76,7 @@ function addCartData() {
         var row="<tr><td>"+tc.oId+"</td><td>"+tc.itemCode+"</td><td>"+tc.description+"</td><td>"+tc.price+"</td><td>"+tc.qty+"</td><td>"+tc.total+"</td></tr>";
         $('#placeOrder').append(row);
     }
-    bindTrEvents();
+    // bindTrEvents();
     getTotal();
 }
 
@@ -151,7 +151,7 @@ $('#purchaseOrder').click(function (){
     tempOrderCartAr.pop();
     addCartData();
     clearOrderTexts()
-
+    generateOrderId();
 
     // console.log(orderArray);
 });
@@ -173,6 +173,23 @@ function generateOrderId() {
     let nextId = 'O00-' + nextIdNumber.toString().padStart(3, '0');
 
     return nextId;
+    // if (orderDB.length == 0) {
+    //     $("#orderId").val("O00-0001");
+    // } else if (orderDB.length > 0) {
+    //     var id = orderDB[orderDB.length - 1].oId.split("-")[1];
+    //     var tempId = parseInt(id);
+    //     tempId = tempId + 1;
+    //     if (tempId <= 9) {
+    //         $("#orderId").val("O00-000" + tempId);
+    //     } else if (tempId <= 99) {
+    //         $("#orderId").val("O00-00" + tempId);
+    //     } else if (tempId <= 999) {
+    //         $("#orderId").val("O00-0" + tempId);
+    //     } else if (tempId <= 9999) {
+    //         $("#orderId").val("O00-" + tempId);
+    //     }
+    // }
+
 }
 
 

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/orderDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/SPA/controller/orderDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/portfolio/nimesha/MyPortfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -53,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\cal\js" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\InMemoryPOS" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\Knight" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\SPA\js" />
-      <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\JS\InMemoryPOS\SPA\controller" />
@@ -65,19 +70,6 @@
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assets\css" />
       <recent name="C:\Kavishka\WorkingZone\MyPortfolio\assignment\Animations" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -177,7 +169,11 @@
       <workItem from="1687326866631" duration="20961000" />
       <workItem from="1687411647845" duration="18899000" />
       <workItem from="1687460617326" duration="16000" />
-      <workItem from="1687460767509" duration="1036000" />
+      <workItem from="1687460767509" duration="1208000" />
+      <workItem from="1687504746055" duration="2677000" />
+      <workItem from="1687507559445" duration="7612000" />
+      <workItem from="1687545356855" duration="673000" />
+      <workItem from="1687573684175" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

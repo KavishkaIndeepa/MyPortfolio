@@ -8,31 +8,38 @@
 function addCustomer() {
 
     let customerID = $("#inputCId").val();
-    let customerName = $("#Cname").val();
-    let customerAddress = $("#inputAddress").val();
-    let customerBDay = $("#Cdate").val();
+    if (searchCustomer(customerID.trim()) == undefined) {
 
 
-    // let customerOb = {
-    //     id: customerID,
-    //     name: customerName,
-    //     address: customerAddress,
-    //     date: customerBDay
-    // }
-
-    let newCustomer= Object.assign({},customerObject);
-    newCustomer.id=customerID;
-    newCustomer.name=customerName;
-    newCustomer.address=customerAddress;
-    newCustomer.Birthday=customerBDay;
+        let customerName = $("#Cname").val();
+        let customerAddress = $("#inputAddress").val();
+        let customerBDay = $("#Cdate").val();
 
 
-    customerDB.push(newCustomer);
+        // let customerOb = {
+        //     id: customerID,
+        //     name: customerName,
+        //     address: customerAddress,
+        //     date: customerBDay
+        // }
 
-    getAllCustomers();
-    searchCustomer();
-    clearCustomerInputFields();
-    loadAllCustomerId();
+        let newCustomer = Object.assign({}, customerObject);
+        newCustomer.id = customerID;
+        newCustomer.name = customerName;
+        newCustomer.address = customerAddress;
+        newCustomer.Birthday = customerBDay;
+
+
+        customerDB.push(newCustomer);
+
+        getAllCustomers();
+        searchCustomer();
+        clearCustomerInputFields();
+        loadAllCustomerId();
+    }else {
+        alert("Customer already exits.!");
+        clearCustomerInputFields();
+    }
 
 }
 
@@ -117,6 +124,7 @@ $("#delete").click(function () {
             alert("customer deleted")
             getAllCustomers();
             clearCustomerInputFields();
+            generateCustomerId();
         }else {
             alert("customer not deleted")
         }
@@ -132,6 +140,7 @@ $("#update").click(function (){
     updateCustomer(id);
 
     clearCustomerInputFields();
+    generateCustomerId();
 });
 
 

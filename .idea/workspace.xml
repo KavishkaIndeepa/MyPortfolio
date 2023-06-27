@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet" />
+    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/projects.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +169,14 @@
       <workItem from="1687545356855" duration="673000" />
       <workItem from="1687573684175" duration="290000" />
       <workItem from="1687586253233" duration="108000" />
-      <workItem from="1687587144894" duration="481000" />
+      <workItem from="1687587144894" duration="1107000" />
+      <workItem from="1687623805476" duration="952000" />
+      <workItem from="1687747259605" duration="16000" />
+      <workItem from="1687749120851" duration="10000" />
+      <workItem from="1687758275186" duration="4000" />
+      <workItem from="1687767476933" duration="60000" />
+      <workItem from="1687768105601" duration="602000" />
+      <workItem from="1687852813189" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

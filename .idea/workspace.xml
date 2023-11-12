@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet" />
+    <list default="true" id="9110fc40-5a9c-4ac8-a0fc-1bc75966fbc9" name="Default Changelist" comment="Update Style sheet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -173,7 +177,33 @@
       <workItem from="1687758275186" duration="4000" />
       <workItem from="1687767476933" duration="60000" />
       <workItem from="1687768105601" duration="602000" />
-      <workItem from="1687852813189" duration="897000" />
+      <workItem from="1687852813189" duration="4063000" />
+      <workItem from="1687883161381" duration="97000" />
+      <workItem from="1687885151826" duration="63000" />
+      <workItem from="1687889692008" duration="35000" />
+      <workItem from="1687892219662" duration="13000" />
+      <workItem from="1687892947016" duration="66000" />
+      <workItem from="1687918857279" duration="3097000" />
+      <workItem from="1687947530300" duration="2597000" />
+      <workItem from="1690134363406" duration="771000" />
+      <workItem from="1690361713190" duration="4125000" />
+      <workItem from="1690572684295" duration="629000" />
+      <workItem from="1691403184025" duration="10000" />
+      <workItem from="1691403446370" duration="2000" />
+      <workItem from="1691403461415" duration="5000" />
+      <workItem from="1691403517300" duration="225000" />
+      <workItem from="1692948914308" duration="615000" />
+      <workItem from="1695107594767" duration="634000" />
+      <workItem from="1696500187930" duration="396000" />
+      <workItem from="1697051561818" duration="1040000" />
+      <workItem from="1697308934370" duration="722000" />
+      <workItem from="1697526259555" duration="1554000" />
+      <workItem from="1697648156214" duration="527000" />
+      <workItem from="1697707757290" duration="127000" />
+      <workItem from="1697790489385" duration="859000" />
+      <workItem from="1697876538366" duration="24000" />
+      <workItem from="1697876640495" duration="622000" />
+      <workItem from="1699809913729" duration="3450000" />
     </task>
     <task id="LOCAL-00001" summary="Modified Margin">
       <created>1682532495029</created>

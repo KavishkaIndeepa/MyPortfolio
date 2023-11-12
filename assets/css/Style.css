@@ -29,6 +29,25 @@ html{
 body{
     width: 100%;
     position: relative;
+    /*background-color: black;*/
+}
+
+/* CSS for Light Mode */
+.light-mode {
+    /* Define your light mode styles */
+    background-color: white;
+    color: black;
+}
+
+/* CSS for Dark Mode */
+.dark-mode {
+    /* Define your dark mode styles */
+    background-color: black;
+    color: white;
+
+}
+#theme-toggle{
+    margin-left: 96vw;
 }
 
 

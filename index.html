@@ -31,7 +31,7 @@
 
     <header>
         <h1>MyPortfolio</h1>
-        <div class="topNav">
+        <div class="topNav" >
             <b><a  href="#home" class="topnav-btn hoverText">Home</a></b>&nbsp;
             <b><a href="#About"  class="topnav-btn hoverText">About Me</a></b>&nbsp;
             <b><a href="#Education"  class="topnav-btn hoverText">Education</a></b>&nbsp;
@@ -39,12 +39,19 @@
             <b><a href="#Project"  class="topnav-btn hoverText">Projects</a></b>&nbsp;
             <b><a href="#Gallery"  class="topnav-btn hoverText">Gallery</a></b>&nbsp;
             <b><a href="#Contact"  class="topnav-btn hoverText">Contact</a></b>&nbsp;
+            <!-- Include the icons for light and dark mode -->
+<!--            <i id="light-mode-icon" class="fas fa-sun" style="color: white"></i>-->
+<!--            <i id="dark-mode-icon" class="fas fa-moon" style="display: none; color: white"></i>-->
+        </div>
+        <div id="theme-toggle">
+            <i id="light-mode-icon" class="fas fa-sun" style="color: white"></i>
+            <i id="dark-mode-icon" class="fas fa-moon" style="display: none; color: white"></i>
         </div>
 
     </header>
 
 
-    <main>
+    <main class="light-mode switch-theme">
         <!-- 1 -->
         <section class="homePage" id="home">
 
@@ -141,7 +148,7 @@
             <div class="box-container">
 
                 <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-graduation-cap" style="color: blue"></i>
                     <span>2017</span>
                     <h3>Ordinary Level</h3>
                     <p>2017/O/L | Sinhala Medium |<br>
@@ -149,7 +156,7 @@
                 </div>
 
                 <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-graduation-cap" style="color: blue"></i>
                     <span>2020</span>
                     <h3>Advance Level</h3>
                     <p>2017/O/L | Sinhala Medium |<br>
@@ -157,7 +164,7 @@
                 </div>
 
                 <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-graduation-cap" style="color: blue"></i>
                     <span>2022</span>
                     <h3>Student of IJSE</h3>
                     <p>2022 institute of Software Engineering |<br>
@@ -165,7 +172,7 @@
                 </div>
 
                 <div class="box">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-graduation-cap" style="color: blue"></i>
                     <span>2024</span>
                     <h3>Degree Level</h3>
                     <p>2024 institute of Software Engineering</p>
@@ -379,16 +386,16 @@
             <section id="chatBox">
 
                 <form class="Contact" action="submit" method="post">
-                    <label for="txtName">Name</label>
+<!--                    <label for="txtName">Name</label>-->
                     <input name="name" type="text" id="txtName" placeholder="First Name"><br><br>
 
-                    <label for="txtEMail">E-Mail</label>
+<!--                    <label for="txtEMail">E-Mail</label>-->
                     <input name="name" type="email" id="txtEMail" placeholder="E-Mail"><br><br>
 
-                    <label for="txtTP">Contact Number</label>
+<!--                    <label for="txtTP">Contact Number</label>-->
                     <input name="name" type="tel" id="txtTP" placeholder="Contact Number"><br><br>
 
-                    <lable for="txtMassage">Massage</lable>
+<!--                    <lable for="txtMassage">Massage</lable>-->
                     <textarea name="name" id="txtMassage" cols="30" rows="4" placeholder="Massage"></textarea><br><br>
 
                     <button class="send">send</button>
@@ -405,7 +412,7 @@
 
     </main>
 
-    <footer id="footer_of_site">
+    <footer id="footer_of_site" class="light-mode switch-theme">
         <p>© Copyright 2023 Kavishka Indeepa.</p>
         <p>All Rights Reserved.</p>
     </footer>
@@ -427,6 +434,41 @@
             console.log("This message will print just after fully loading the website")
             loader.style.display = 'none';
         });
+
+        // Get the theme toggle element
+        const themeToggle = document.getElementById("theme-toggle");
+
+        // Get the elements you want to switch between light and dark mode
+        const elementsToSwitch = document.querySelectorAll(".switch-theme");
+
+        // Toggle between light and dark mode classes
+        themeToggle.addEventListener("click", function () {
+            elementsToSwitch.forEach((element) => {
+                element.classList.toggle("light-mode");
+                element.classList.toggle("dark-mode");
+            });
+
+            // Toggle the visibility of the theme icons
+            const lightModeIcon = document.getElementById("light-mode-icon");
+            const darkModeIcon = document.getElementById("dark-mode-icon");
+            lightModeIcon.style.display = lightModeIcon.style.display === "none" ? "inline" : "none";
+            darkModeIcon.style.display = darkModeIcon.style.display === "none" ? "inline" : "none";
+
+            // Toggle background and text color for the body
+            const body = document.body;
+            if (body.classList.contains("dark-mode")) {
+                body.style.backgroundColor = "#000000"; // Dark background color
+                body.style.color = "#ffffff"; // White text color
+
+            } else {
+                body.style.backgroundColor = "#ffffff"; // Light background color
+                body.style.color = "#000000"; // Black text color
+            }
+        });
+
+
+
+
     </script>
 </body>
 

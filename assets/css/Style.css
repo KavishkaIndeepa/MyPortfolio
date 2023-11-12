@@ -42,7 +42,7 @@ body{
 /* CSS for Dark Mode */
 .dark-mode {
     /* Define your dark mode styles */
-    background-color: black;
+    background-color: #262626;
     color: white;
 
 }
